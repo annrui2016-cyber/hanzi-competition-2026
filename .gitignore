@@ -1,0 +1,9 @@
+# Build output. The deployed artifact is index.html at the repo root (committed);
+# tool/index.html is just the intermediate copy build.py writes.
+tool/index.html
+
+# Python / editor noise
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

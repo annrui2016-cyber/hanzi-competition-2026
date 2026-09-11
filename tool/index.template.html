@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 汉字大赛 · 备赛营</title>
+<script>/*__LIB__*/</script>
+<style>
+  :root{
+    --bg:#f2f7f6; --card:#fff; --ink:#12312e; --muted:#6b8380;
+    --brand:#0d9488; --brand2:#0891b2; --ok:#22c55e; --warn:#f59e0b;
+    --bad:#ef4444; --line:#e3ecea; --gold:#f59e0b; --gray:#c7d3d1;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--bg);color:var(--ink);-webkit-tap-highlight-color:transparent}
+  .kai{font-family:"KaiTi","STKaiti","Kaiti SC","BiauKai","DFKai-SB",serif !important}
+  .wrap{max-width:780px;margin:0 auto;padding:16px}
+  .en{color:var(--muted);font-weight:600}
+  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+    padding:16px 18px;background:linear-gradient(135deg,var(--brand),var(--brand2));
+    color:#fff;border-radius:18px;box-shadow:0 8px 24px rgba(13,148,136,.25)}
+  header .tb{display:flex;flex-direction:column;gap:3px}
+  header h1{font-size:21px;margin:0;font-weight:800;letter-spacing:.5px}
+  header .subtitle{font-size:13px;font-weight:700;color:#fde9a7;text-shadow:0 1px 2px rgba(0,0,0,.12)}
+  header .streak{margin-left:auto;font-size:13px;background:rgba(255,255,255,.2);padding:6px 12px;border-radius:999px;font-weight:700}
+  .crumb{display:flex;align-items:center;gap:10px;margin:14px 2px;flex-wrap:wrap}
+  .toplink{font-size:14px;color:var(--brand);cursor:pointer;font-weight:700}
+  .crumbmeta{font-size:13px;color:var(--muted);margin-left:auto}
+  .intro{font-size:13px;margin:2px 2px 12px;line-height:1.6}
+  .intro .en{display:block;font-size:12px}
+  /* cycle / category cards */
+  .cards{display:grid;grid-template-columns:1fr;gap:12px}
+  .bigcard{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 18px;
+    cursor:pointer;transition:.15s;display:flex;align-items:center;gap:16px}
+  .bigcard:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.07);border-color:var(--brand)}
+  .bigcard .ico{font-size:34px;width:56px;height:56px;flex:none;display:flex;align-items:center;justify-content:center;
+    background:#e6f6f4;border-radius:14px}
+  .bigcard .t1{font-size:19px;font-weight:800}
+  .bigcard .t2{font-size:13px;color:var(--muted);margin-top:2px}
+  .bigcard .arrow{margin-left:auto;color:var(--gray);font-size:22px;font-weight:800}
+  .bigcard .mini{margin-left:auto;text-align:right;font-size:12px;color:var(--muted);font-weight:700}
+  .prog{height:7px;border-radius:99px;background:#e6ecec;overflow:hidden;margin-top:7px;width:130px}
+  .prog i{display:block;height:100%;background:var(--ok);border-radius:99px}
+  .catwrap .bigcard .ico{background:#eef7f0}
+  /* item grid */
+  .gridhead{display:flex;align-items:center;gap:10px;margin:6px 2px 10px;flex-wrap:wrap}
+  .gridhead .pill{font-size:12px;font-weight:800;color:#fff;background:var(--brand);padding:4px 11px;border-radius:99px}
+  .barwrap{flex:1;min-width:120px;height:9px;border-radius:99px;background:#e6ecec;overflow:hidden}
+  .barwrap i{display:block;height:100%;background:var(--ok)}
+  .igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:10px}
+  .chip{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 6px;text-align:center;
+    cursor:pointer;transition:.12s;position:relative;min-height:64px;display:flex;flex-direction:column;justify-content:center}
+  .chip:hover{border-color:var(--brand);transform:translateY(-1px)}
+  .chip .w{font-size:22px;font-weight:800;line-height:1.15}
+  .chip .w.lg{font-size:26px}
+  .chip.done{background:#f0fdf4;border-color:#bbf7d0}
+  .chip.done::after{content:"✓";position:absolute;top:3px;right:6px;color:var(--ok);font-size:12px;font-weight:900}
+  .startbtn{margin:14px 0 4px}
+  /* study card */
+  .card{background:var(--card);border-radius:22px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.06);margin-top:12px}
+  .steps{display:flex;gap:6px;justify-content:center;margin-bottom:6px;flex-wrap:wrap}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--gray)}
+  .dot.on{background:var(--brand);transform:scale(1.3)}.dot.ok{background:var(--ok)}
+  .stepname{text-align:center;color:var(--muted);font-size:13px;font-weight:700;margin-bottom:12px;line-height:1.4}
+  .center{text-align:center}
+  .term{font-size:60px;font-weight:800;margin:6px 0 2px;line-height:1.1}
+  .term.word{font-size:52px;letter-spacing:2px}
+  .py{font-size:24px;color:var(--brand);font-weight:800;margin-top:6px}
+  .endef{font-size:17px;color:var(--ink);margin-top:4px}
+  .ardef{font-size:18px;color:var(--muted);margin-top:2px;direction:rtl}
+  .spk{cursor:pointer;user-select:none}
+  .btnrow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  button.act{font-size:15px;font-weight:800;padding:12px 22px;border:none;border-radius:14px;background:var(--brand);
+    color:#fff;cursor:pointer;box-shadow:0 4px 12px rgba(13,148,136,.3)}
+  button.act .en{color:#d7f5f1}
+  button.act.ghost{background:#eef4f3;color:var(--ink);box-shadow:none}
+  button.act.ghost .en{color:var(--muted)}
+  button.act.ok{background:var(--ok)}button.act.ok .en{color:#dcfce7}
+  .tip{text-align:center;color:var(--muted);font-size:13px;margin-top:10px;line-height:1.5}
+  /* listen MCQ */
+  .bigspk{font-size:40px;text-align:center;margin:6px 0 2px;cursor:pointer}
+  .opts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+  .opt{border:2px solid var(--line);border-radius:16px;background:#fff;cursor:pointer;padding:16px 8px;text-align:center;
+    font-weight:800;font-size:26px;transition:.12s}
+  @media(hover:hover){.opt:hover{border-color:var(--brand)}}
+  .opt.correct{border-color:var(--ok);background:#f0fdf4}
+  .opt.wrong{border-color:var(--bad);background:#fef2f2}
+  /* 田字格 */
+  .tian{margin:12px auto;width:236px;height:236px;border:1.5px solid #d3e0dd;border-radius:14px;background-color:#fff;position:relative;
+    background-image:linear-gradient(#edf3f2,#edf3f2),linear-gradient(#edf3f2,#edf3f2);
+    background-size:1px 100%,100% 1px;background-position:center;background-repeat:no-repeat}
+  .done-screen .big{font-size:52px;margin:8px 0}
+  .hide{display:none}
+  .footer{text-align:center;color:var(--muted);font-size:12px;margin:20px 0}
+  .credit{margin-top:5px;font-size:11.5px;color:#9fb0ad;letter-spacing:.2px}
+  .credit b{color:#84928f;font-weight:800}
+  .credit a{color:inherit;text-decoration:none}
+  .credit a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tb">
+      <h1>🏆 2026 汉字大赛 · 备赛营</h1>
+      <div class="subtitle">2026 Chinese Character Challenge · Prep</div>
+    </div>
+    <span class="streak" id="streak"></span>
+  </header>
+
+  <!-- HOME: pick cycle -->
+  <section id="home">
+    <div class="intro">选择你的组别，按 <b>基础 / 认读 / 书写</b> 三类分类备赛。
+      <span class="en">Pick your cycle, then prepare by category: Foundation / Recognition / Writing.</span></div>
+    <div class="cards" id="cycleCards"></div>
+  </section>
+
+  <!-- CYCLE: pick category -->
+  <section id="cycle" class="hide">
+    <div class="crumb"><span class="toplink" id="toHome">‹ 组别 Cycles</span><span class="crumbmeta" id="cycleMeta"></span></div>
+    <div class="cards catwrap" id="catCards"></div>
+  </section>
+
+  <!-- CATEGORY: item grid -->
+  <section id="category" class="hide">
+    <div class="crumb"><span class="toplink" id="toCycle">‹ 返回 Back</span><span class="crumbmeta" id="catMeta"></span></div>
+    <div class="gridhead">
+      <span class="pill" id="catPill"></span>
+      <div class="barwrap"><i id="catBar"></i></div>
+      <span class="crumbmeta" id="catCount"></span>
+    </div>
+    <div class="btnrow startbtn"><button class="act" id="studyAll"></button></div>
+    <div class="igrid" id="itemGrid"></div>
+  </section>
+
+  <!-- STUDY -->
+  <section id="study" class="hide">
+    <div class="crumb"><span class="toplink" id="toGrid">‹ 列表 List</span><span class="crumbmeta" id="studyMeta"></span></div>
+    <div class="card"><div class="steps" id="steps"></div><div class="stepname" id="stepName"></div><div id="stage"></div></div>
+  </section>
+
+  <div class="footer">字词表：2026 汉字大赛官方字词总表 · 笔顺 HanziWriter
+    <div class="credit">Designed by <b>Dr. Zhou Fang</b> · <a href="mailto:dr.zhou.fang@gmail.com">dr.zhou.fang@gmail.com</a></div>
+  </div>
+</div>
+
+<script>
+const DATA = /*__DATA__*/{};
+const CHARDATA = /*__CHARDATA__*/{};
+const CDL=(ch,onComplete)=>onComplete(CHARDATA[ch]);
+function HW(el,ch,o){o=o||{};o.charDataLoader=CDL;return HanziWriter.create(el,ch,o);}
+</script>
+<script>
+/* ---------- state ---------- */
+const LS='hanzi_dasai_v1';
+let prog=JSON.parse(localStorage.getItem(LS)||'{}'); prog.done=prog.done||{};
+function save(){localStorage.setItem(LS,JSON.stringify(prog));}
+const CATS=[['base','基础','Foundation','🌱'],['read','认读','Recognition','👀'],['write','书写','Writing','✍️']];
+const CYNAME={'1':['小学','Primary Cycle 1'],'2':['初中','Middle Cycle 2'],'3':['高中','High Cycle 3']};
+let curCid=null,curCat=null,curList=null,curIdx=0;
+
+const $=s=>document.querySelector(s);
+function show(id){['home','cycle','category','study'].forEach(s=>$('#'+s).classList.add('hide'));$('#'+id).classList.remove('hide');}
+function isDone(cid,cat,term){return !!(prog.done[cid]&&prog.done[cid][cat]&&prog.done[cid][cat][term]);}
+function markDone(cid,cat,term){prog.done[cid]=prog.done[cid]||{};prog.done[cid][cat]=prog.done[cid][cat]||{};prog.done[cid][cat][term]=1;save();}
+function doneCount(cid,cat){const items=DATA.cycles[cid][cat];return items.filter(e=>isDone(cid,cat,e.t)).length;}
+function cycleTotal(cid){return CATS.reduce((n,c)=>n+DATA.cycles[cid][c[0]].length,0);}
+function cycleDone(cid){return CATS.reduce((n,c)=>n+doneCount(cid,c[0]),0);}
+
+/* ---------- speech + sfx ---------- */
+function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+let _ac=null;function ac(){try{_ac=_ac||new(window.AudioContext||window.webkitAudioContext)();}catch(e){}return _ac;}
+function tone(f,s,d,ty,g){const c=ac();if(!c)return;const o=c.createOscillator(),gn=c.createGain();o.type=ty||'sine';o.frequency.value=f;o.connect(gn);gn.connect(c.destination);const t=c.currentTime+s;gn.gain.setValueAtTime(0,t);gn.gain.linearRampToValueAtTime(g||.2,t+.02);gn.gain.exponentialRampToValueAtTime(.0001,t+d);o.start(t);o.stop(t+d);}
+function playGood(){tone(660,0,.13,'sine',.25);tone(990,.1,.18,'sine',.25);}
+function playBad(){tone(200,0,.18,'square',.16);tone(150,.12,.2,'square',.14);}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* ---------- HOME ---------- */
+function renderHome(){
+  show('home');
+  const total=['1','2','3'].reduce((n,c)=>n+cycleTotal(c),0);
+  const done=['1','2','3'].reduce((n,c)=>n+cycleDone(c),0);
+  $('#streak').textContent='⭐ 已掌握 '+done+'/'+total;
+  const box=$('#cycleCards');box.innerHTML='';
+  const icons={'1':'🧒','2':'🧑','3':'🎓'};
+  ['1','2','3'].forEach(cid=>{
+    const t=cycleTotal(cid),d=cycleDone(cid);
+    const el=document.createElement('div');el.className='bigcard';
+    el.innerHTML='<div class="ico">'+icons[cid]+'</div>'
+      +'<div><div class="t1">Cycle '+cid+' · '+CYNAME[cid][0]+'</div>'
+      +'<div class="t2">'+CYNAME[cid][1]+' · '+t+' 字词</div>'
+      +'<div class="prog"><i style="width:'+(t?Math.round(d/t*100):0)+'%"></i></div></div>'
+      +'<div class="mini">'+d+'/'+t+'<div class="arrow">›</div></div>';
+    el.onclick=()=>openCycle(cid);box.appendChild(el);
+  });
+}
+/* ---------- CYCLE ---------- */
+function openCycle(cid){
+  curCid=cid;show('cycle');
+  $('#cycleMeta').textContent='Cycle '+cid+' · '+CYNAME[cid][0]+' · '+CYNAME[cid][1];
+  const box=$('#catCards');box.innerHTML='';
+  CATS.forEach(([cat,zh,en,ico])=>{
+    const items=DATA.cycles[cid][cat],t=items.length,d=doneCount(cid,cat);
+    const el=document.createElement('div');el.className='bigcard';
+    const tag=cat==='write'?'（听写·需书写）':'（发音·意思·练习）';
+    el.innerHTML='<div class="ico">'+ico+'</div>'
+      +'<div><div class="t1">'+zh+' <span class="en" style="font-size:14px">'+en+'</span></div>'
+      +'<div class="t2">'+t+' 字词 '+tag+'</div>'
+      +'<div class="prog"><i style="width:'+(t?Math.round(d/t*100):0)+'%"></i></div></div>'
+      +'<div class="mini">'+d+'/'+t+'<div class="arrow">›</div></div>';
+    el.onclick=()=>openCategory(cid,cat);box.appendChild(el);
+  });
+}
+/* ---------- CATEGORY grid ---------- */
+function catInfo(cat){return CATS.find(c=>c[0]===cat);}
+function openCategory(cid,cat){
+  curCid=cid;curCat=cat;curList=DATA.cycles[cid][cat];show('category');
+  const ci=catInfo(cat);
+  $('#catMeta').textContent='Cycle '+cid+' · '+CYNAME[cid][0];
+  $('#catPill').textContent=ci[1]+' '+ci[2];
+  const d=doneCount(cid,cat),t=curList.length;
+  $('#catBar').style.width=(t?Math.round(d/t*100):0)+'%';
+  $('#catCount').textContent=d+' / '+t;
+  const sb=$('#studyAll');
+  const firstUndone=curList.findIndex(e=>!isDone(cid,cat,e.t));
+  sb.innerHTML=(d===0?'开始学习 ›':(d>=t?'再复习一遍 ↻':'继续学习 ›'))+'<div class="en">'+(d>=t?'Review again':'Study')+'</div>';
+  sb.onclick=()=>studyItem(firstUndone<0?0:firstUndone);
+  const grid=$('#itemGrid');grid.innerHTML='';
+  curList.forEach((e,i)=>{
+    const el=document.createElement('div');el.className='chip'+(isDone(cid,cat,e.t)?' done':'');
+    el.innerHTML='<div class="w kai '+(e.t.length===1?'lg':'')+'">'+e.t+'</div>';
+    el.onclick=()=>studyItem(i);grid.appendChild(el);
+  });
+}
+function backToGrid(){openCategory(curCid,curCat);}
+
+/* ---------- STUDY router ---------- */
+function studyItem(idx){
+  curIdx=idx;const e=curList[idx];show('study');
+  $('#toGrid').onclick=backToGrid;
+  $('#studyMeta').textContent=catInfo(curCat)[1]+' · '+(idx+1)+'/'+curList.length;
+  if(curCat==='write') studyWrite(e); else studyRead(e);
+}
+function afterItem(){
+  markDone(curCid,curCat,curList[curIdx].t);
+  // advance to next undone, else back to grid
+  let n=-1;for(let k=curIdx+1;k<curList.length;k++){if(!isDone(curCid,curCat,curList[k].t)){n=k;break;}}
+  const e=curList[curIdx];
+  $('#steps').innerHTML='';$('#stepName').textContent='';
+  $('#stage').innerHTML='<div class="center done-screen"><div class="big">✅</div>'
+    +'<h3 class="kai" style="font-size:30px;margin:6px 0">'+e.t+'</h3>'
+    +'<div class="tip">掌握啦！Well done!</div>'
+    +'<div class="btnrow">'
+    +(n>=0?'<button class="act" id="nx">下一个 ›<div class="en">Next</div></button>':'')
+    +'<button class="act ghost" id="bk">返回列表<div class="en">Back to list</div></button></div></div>';
+  if(n>=0)$('#nx').onclick=()=>studyItem(n);
+  $('#bk').onclick=backToGrid;
+}
+
+/* ---------- READ / FOUNDATION flow: present -> listen MCQ ---------- */
+function studyRead(e){
+  renderSteps(['呈现','练习'],0);
+  const isWord=e.t.length>1;
+  $('#stage').innerHTML='<div class="center">'
+    +'<div class="term kai '+(isWord?'word':'')+' spk" id="term">'+e.t+' 🔊</div>'
+    +'<div class="py spk" id="py">'+e.py+'</div>'
+    +'<div class="endef">'+e.en+'</div>'
+    +(e.ar?'<div class="ardef">'+e.ar+'</div>':'')
+    +'</div>'
+    +'<div class="btnrow"><button class="act" id="go">练习 ›<div class="en">Practice</div></button></div>'
+    +'<div class="tip">点汉字或拼音可发音 · Tap to hear it</div>';
+  speak(e.t);$('#term').onclick=()=>speak(e.t);$('#py').onclick=()=>speak(e.t);
+  $('#go').onclick=()=>listenPick(e);
+}
+function listenPick(e){
+  renderSteps(['呈现','练习'],1);
+  const pool=curList.filter(x=>x.t!==e.t);
+  const distract=shuffle(pool.slice()).slice(0,3);
+  const opts=shuffle([e].concat(distract));
+  $('#stage').innerHTML='<div class="center"><div class="bigspk" id="spk">🔊</div>'
+    +'<div class="endef">听发音，选出正确的字/词 <span class="en">— listen &amp; pick</span></div></div>'
+    +'<div class="opts" id="opts"></div>';
+  const spk=()=>speak(e.t);$('#spk').onclick=spk;setTimeout(spk,250);
+  const box=$('#opts');
+  opts.forEach(o=>{const el=document.createElement('div');el.className='opt kai';el.textContent=o.t;
+    if(o.t===e.t)el.dataset.ok=1;
+    el.onclick=()=>{ if(box.dataset.locked)return;
+      if(o.t===e.t){el.classList.add('correct');box.dataset.locked=1;playGood();speak(e.t);setTimeout(afterItem,700);}
+      else{el.classList.add('wrong');el.style.pointerEvents='none';playBad();}
+    };box.appendChild(el);});
+}
+
+/* ---------- WRITE flow: per char -> stroke -> trace -> write ---------- */
+function studyWrite(e){
+  // intro card then walk each character
+  renderSteps(charSteps(e),0);
+  $('#stage').innerHTML='<div class="center">'
+    +'<div class="term kai '+(e.t.length>1?'word':'')+' spk" id="term">'+e.t+' 🔊</div>'
+    +'<div class="py spk" id="py">'+e.py+'</div><div class="endef">'+e.en+'</div>'
+    +(e.ar?'<div class="ardef">'+e.ar+'</div>':'')+'</div>'
+    +'<div class="btnrow"><button class="act" id="go">学写第一个字 ›<div class="en">Start writing</div></button></div>'
+    +'<div class="tip">'+(e.t.length>1?'这个词要写 '+e.t.length+' 个字，逐字来 · write each character':'看笔顺，再默写')+'</div>';
+  speak(e.t);$('#term').onclick=()=>speak(e.t);$('#py').onclick=()=>speak(e.t);
+  $('#go').onclick=()=>writeChar(e,0);
+}
+function charSteps(e){const n=e.t.length;const s=['呈现'];for(let i=0;i<n;i++)s.push('笔顺'+(n>1?(i+1):''),'描红'+(n>1?(i+1):''),'默写'+(n>1?(i+1):''));return s;}
+function writeChar(e,ci){
+  const ch=e.c[ci],n=e.t.length,base=1+ci*3;
+  // step: stroke order
+  renderSteps(charSteps(e),base);
+  const label=n>1?('（'+(ci+1)+'/'+n+'）'+ch):ch;
+  $('#stage').innerHTML='<div class="stepname" style="margin-top:-4px">笔顺 '+label+'</div>'
+    +'<div class="center"><div class="tian" id="tg"></div></div>'
+    +'<div class="btnrow"><button class="act ghost" id="rep">↻ 再看<div class="en">Replay</div></button>'
+    +'<button class="act" id="go">描红 ›<div class="en">Trace</div></button></div>';
+  const w=HW('tg',ch,{width:236,height:236,padding:12,showCharacter:false,strokeColor:'#0d9488',outlineColor:'#d8e6e3',delayBetweenStrokes:340,strokeAnimationSpeed:.9});
+  w.animateCharacter();$('#rep').onclick=()=>w.animateCharacter();
+  $('#go').onclick=()=>traceChar(e,ci);
+}
+function traceChar(e,ci){
+  const ch=e.c[ci],n=e.t.length,base=2+ci*3;
+  renderSteps(charSteps(e),base);
+  $('#stage').innerHTML='<div class="stepname" style="margin-top:-4px">描红 '+ch+'</div>'
+    +'<div class="center"><div class="tian" id="tg"></div></div>'
+    +'<div class="tip" id="t">沿浅色笔画描红 · trace the strokes</div>';
+  const w=HW('tg',ch,{width:236,height:236,padding:12,showCharacter:false,showOutline:true,outlineColor:'#d3dddb',strokeColor:'#22c55e',drawingColor:'#0d9488',drawingWidth:26,showHintAfterMisses:2});
+  w.quiz({leniency:1.3,onComplete:function(){w.hideOutline();w.showCharacter({duration:300});
+    $('#t').innerHTML='✅ 描红完成！试试默写 · now write it';
+    $('#stage').insertAdjacentHTML('beforeend','<div class="btnrow"><button class="act" id="go">默写 ›<div class="en">Write</div></button></div>');
+    $('#go').onclick=()=>writeMem(e,ci);}});
+}
+function writeMem(e,ci){
+  const ch=e.c[ci],n=e.t.length,base=3+ci*3;
+  renderSteps(charSteps(e),base);
+  $('#stage').innerHTML='<div class="stepname" style="margin-top:-4px">默写 '+ch+' <span class="en">'+e.py+'</span></div>'
+    +'<div class="center"><div class="tian" id="tg"></div></div>'
+    +'<div class="tip" id="t">在空白格里默写 · write from memory</div>'
+    +'<div class="btnrow"><button class="act ghost" id="ref">👁 参考<div class="en">Reference</div></button></div>';
+  const w=HW('tg',ch,{width:236,height:236,padding:12,showCharacter:false,showOutline:false,strokeColor:'#12312e',drawingColor:'#0d9488',drawingWidth:26});
+  w.quiz({leniency:1.0,onComplete:function(s){const m=s.totalMistakes,stars=m<=1?3:(m<=3?2:1);
+    $('#ref').style.display='none';
+    $('#t').innerHTML='✅ '+ch+' 写完！'+'⭐'.repeat(stars)+'（错 '+m+'）';
+    const isLast=ci>=n-1;
+    $('#stage').insertAdjacentHTML('beforeend','<div class="btnrow"><button class="act ok" id="go">'+(isLast?'完成 ✓':'下一个字 ›')+'<div class="en">'+(isLast?'Done':'Next char')+'</div></button></div>');
+    $('#go').onclick=()=> isLast?afterItem():writeChar(e,ci+1);
+  }});
+  $('#ref').onclick=()=>{const m=document.createElement('div');m.style.cssText='position:fixed;inset:0;background:rgba(18,49,46,.45);display:flex;align-items:center;justify-content:center;z-index:50';
+    m.innerHTML='<div style="background:#fff;border-radius:20px;padding:20px;text-align:center"><h3 style="margin:0 0 8px">正确写法 '+ch+'</h3><div class="tian" id="rtg" style="margin:0 auto"></div><div class="btnrow"><button class="act" id="rc">知道了<div class="en">Got it</div></button></div></div>';
+    document.body.appendChild(m);const rw=HW('rtg',ch,{width:180,height:180,padding:10,showCharacter:false,strokeColor:'#0d9488',outlineColor:'#d8e6e3',delayBetweenStrokes:300});rw.loopCharacterAnimation();
+    $('#rc').onclick=()=>document.body.removeChild(m);};
+}
+function renderSteps(names,active){
+  $('#steps').innerHTML=names.map((_,i)=>'<span class="dot '+(i<active?'ok':(i===active?'on':''))+'"></span>').join('');
+  const n=names[active]||'';
+  $('#stepName').innerHTML='第 '+(active+1)+' 步 / '+names.length+' · '+n;
+}
+
+/* ---------- init ---------- */
+$('#toHome').onclick=renderHome;
+$('#toCycle').onclick=()=>openCycle(curCid);
+renderHome();
+</script>
+</body>
+</html>

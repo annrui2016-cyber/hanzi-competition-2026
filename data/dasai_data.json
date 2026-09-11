@@ -1,0 +1,5503 @@
+{
+ "cycles": {
+  "1": {
+   "base": [
+    {
+     "t": "我",
+     "py": "wǒ",
+     "en": "I, me, my; our, us",
+     "ar": "",
+     "c": [
+      "我"
+     ]
+    },
+    {
+     "t": "你",
+     "py": "nǐ",
+     "en": "you, second person pronoun",
+     "ar": "",
+     "c": [
+      "你"
+     ]
+    },
+    {
+     "t": "她",
+     "py": "tā",
+     "en": "she, her",
+     "ar": "",
+     "c": [
+      "她"
+     ]
+    },
+    {
+     "t": "他",
+     "py": "tā",
+     "en": "other, another; he, she, it",
+     "ar": "",
+     "c": [
+      "他"
+     ]
+    },
+    {
+     "t": "它",
+     "py": "tā",
+     "en": "it; other",
+     "ar": "",
+     "c": [
+      "它"
+     ]
+    },
+    {
+     "t": "我们",
+     "py": "wǒmen",
+     "en": "we",
+     "ar": "",
+     "c": [
+      "我",
+      "们"
+     ]
+    },
+    {
+     "t": "你们",
+     "py": "nǐmen",
+     "en": "you (plural)",
+     "ar": "",
+     "c": [
+      "你",
+      "们"
+     ]
+    },
+    {
+     "t": "他们",
+     "py": "tāmen",
+     "en": "they (m.)",
+     "ar": "",
+     "c": [
+      "他",
+      "们"
+     ]
+    },
+    {
+     "t": "她们",
+     "py": "tāmen",
+     "en": "they (f.)",
+     "ar": "",
+     "c": [
+      "她",
+      "们"
+     ]
+    },
+    {
+     "t": "是",
+     "py": "shì",
+     "en": "to be; indeed, right, yes; okay",
+     "ar": "",
+     "c": [
+      "是"
+     ]
+    },
+    {
+     "t": "很",
+     "py": "hěn",
+     "en": "very, quite, much",
+     "ar": "",
+     "c": [
+      "很"
+     ]
+    },
+    {
+     "t": "在",
+     "py": "zài",
+     "en": "at, in, on; to exist; used to indicate the present progressive tense",
+     "ar": "",
+     "c": [
+      "在"
+     ]
+    },
+    {
+     "t": "的",
+     "py": "de",
+     "en": "aim, goal; of; possessive particle; -self suffix",
+     "ar": "",
+     "c": [
+      "的"
+     ]
+    },
+    {
+     "t": "不",
+     "py": "bù",
+     "en": "no, not, un-; negative prefix",
+     "ar": "",
+     "c": [
+      "不"
+     ]
+    },
+    {
+     "t": "什么",
+     "py": "shénme",
+     "en": "what",
+     "ar": "",
+     "c": [
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "谁",
+     "py": "shéi/shuí",
+     "en": "who? whom? whose? anyone?",
+     "ar": "",
+     "c": [
+      "谁"
+     ]
+    },
+    {
+     "t": "几",
+     "py": "jǐ",
+     "en": "small table; how many; a few, some",
+     "ar": "",
+     "c": [
+      "几"
+     ]
+    },
+    {
+     "t": "多少",
+     "py": "duōshǎo",
+     "en": "how many/much",
+     "ar": "",
+     "c": [
+      "多",
+      "少"
+     ]
+    },
+    {
+     "t": "怎么",
+     "py": "zěnme",
+     "en": "how",
+     "ar": "",
+     "c": [
+      "怎",
+      "么"
+     ]
+    },
+    {
+     "t": "怎么样",
+     "py": "zěnmeyàng",
+     "en": "how about; how is it",
+     "ar": "",
+     "c": [
+      "怎",
+      "么",
+      "样"
+     ]
+    },
+    {
+     "t": "哪",
+     "py": "nǎ",
+     "en": "which? where? how?",
+     "ar": "",
+     "c": [
+      "哪"
+     ]
+    },
+    {
+     "t": "哪里",
+     "py": "nǎlǐ",
+     "en": "where",
+     "ar": "",
+     "c": [
+      "哪",
+      "里"
+     ]
+    },
+    {
+     "t": "为什么",
+     "py": "wèishénme",
+     "en": "why",
+     "ar": "",
+     "c": [
+      "为",
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "吗",
+     "py": "ma",
+     "en": "final interrogative particle",
+     "ar": "",
+     "c": [
+      "吗"
+     ]
+    },
+    {
+     "t": "呢",
+     "py": "ne",
+     "en": "wool; interrogative or emphatic final particle",
+     "ar": "",
+     "c": [
+      "呢"
+     ]
+    },
+    {
+     "t": "吧",
+     "py": "ba",
+     "en": "emphatic final particle",
+     "ar": "",
+     "c": [
+      "吧"
+     ]
+    },
+    {
+     "t": "这",
+     "py": "zhè",
+     "en": "this, these; such; here",
+     "ar": "",
+     "c": [
+      "这"
+     ]
+    },
+    {
+     "t": "那",
+     "py": "nà",
+     "en": "that, that one, those",
+     "ar": "",
+     "c": [
+      "那"
+     ]
+    },
+    {
+     "t": "有",
+     "py": "yǒu",
+     "en": "to have, to own, to possess; to exist",
+     "ar": "",
+     "c": [
+      "有"
+     ]
+    },
+    {
+     "t": "和",
+     "py": "hé",
+     "en": "harmony, peace; calm, peaceful",
+     "ar": "",
+     "c": [
+      "和"
+     ]
+    }
+   ],
+   "read": [
+    {
+     "t": "四",
+     "py": "sì",
+     "en": "four",
+     "ar": "",
+     "c": [
+      "四"
+     ]
+    },
+    {
+     "t": "五",
+     "py": "wǔ",
+     "en": "five; surname",
+     "ar": "",
+     "c": [
+      "五"
+     ]
+    },
+    {
+     "t": "六",
+     "py": "liù",
+     "en": "six",
+     "ar": "",
+     "c": [
+      "六"
+     ]
+    },
+    {
+     "t": "七",
+     "py": "qī",
+     "en": "seven",
+     "ar": "",
+     "c": [
+      "七"
+     ]
+    },
+    {
+     "t": "八",
+     "py": "bā",
+     "en": "eight; all around, all sides",
+     "ar": "",
+     "c": [
+      "八"
+     ]
+    },
+    {
+     "t": "九",
+     "py": "jiǔ",
+     "en": "nine",
+     "ar": "",
+     "c": [
+      "九"
+     ]
+    },
+    {
+     "t": "十",
+     "py": "shí",
+     "en": "ten, tenth; complete; perfect",
+     "ar": "",
+     "c": [
+      "十"
+     ]
+    },
+    {
+     "t": "人",
+     "py": "rén",
+     "en": "man, person; people",
+     "ar": "",
+     "c": [
+      "人"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "手",
+     "py": "shǒu",
+     "en": "hand",
+     "ar": "",
+     "c": [
+      "手"
+     ]
+    },
+    {
+     "t": "鸟",
+     "py": "niǎo",
+     "en": "bird",
+     "ar": "",
+     "c": [
+      "鸟"
+     ]
+    },
+    {
+     "t": "鱼",
+     "py": "yú",
+     "en": "fish",
+     "ar": "",
+     "c": [
+      "鱼"
+     ]
+    },
+    {
+     "t": "马",
+     "py": "mǎ",
+     "en": "horse; surname",
+     "ar": "",
+     "c": [
+      "马"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "喝",
+     "py": "hē",
+     "en": "to drink; to shout, to call out",
+     "ar": "",
+     "c": [
+      "喝"
+     ]
+    },
+    {
+     "t": "个",
+     "py": "gè",
+     "en": "this, that; single; measure word for individuals",
+     "ar": "",
+     "c": [
+      "个"
+     ]
+    },
+    {
+     "t": "水",
+     "py": "shuǐ",
+     "en": "water, liquid, lotion, juice",
+     "ar": "",
+     "c": [
+      "水"
+     ]
+    },
+    {
+     "t": "大",
+     "py": "dà",
+     "en": "big, great, vast, high, deep",
+     "ar": "",
+     "c": [
+      "大"
+     ]
+    },
+    {
+     "t": "小",
+     "py": "xiǎo",
+     "en": "small, tiny, insignificant",
+     "ar": "",
+     "c": [
+      "小"
+     ]
+    },
+    {
+     "t": "多",
+     "py": "duō",
+     "en": "much, many, multi-; more than, over",
+     "ar": "",
+     "c": [
+      "多"
+     ]
+    },
+    {
+     "t": "少",
+     "py": "shǎo",
+     "en": "few, little; less; inadequate",
+     "ar": "",
+     "c": [
+      "少"
+     ]
+    },
+    {
+     "t": "春",
+     "py": "chūn",
+     "en": "springtime; joyful, lustful, wanton",
+     "ar": "",
+     "c": [
+      "春"
+     ]
+    },
+    {
+     "t": "夏",
+     "py": "xià",
+     "en": "summer; the Xia or Hsia dynasty",
+     "ar": "",
+     "c": [
+      "夏"
+     ]
+    },
+    {
+     "t": "秋",
+     "py": "qiū",
+     "en": "autumn, fall; year",
+     "ar": "",
+     "c": [
+      "秋"
+     ]
+    },
+    {
+     "t": "冬",
+     "py": "dōng",
+     "en": "winter, 11th lunar month",
+     "ar": "",
+     "c": [
+      "冬"
+     ]
+    },
+    {
+     "t": "日",
+     "py": "rì",
+     "en": "sun; day; daytime",
+     "ar": "",
+     "c": [
+      "日"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "花",
+     "py": "huā",
+     "en": "flower, blossom; to spend (time or money)",
+     "ar": "",
+     "c": [
+      "花"
+     ]
+    },
+    {
+     "t": "雨",
+     "py": "yǔ",
+     "en": "rain",
+     "ar": "",
+     "c": [
+      "雨"
+     ]
+    },
+    {
+     "t": "雪",
+     "py": "xuě",
+     "en": "snow; wipe away shame, avenge",
+     "ar": "",
+     "c": [
+      "雪"
+     ]
+    },
+    {
+     "t": "男",
+     "py": "nán",
+     "en": "man, boy; male; baron; surname",
+     "ar": "",
+     "c": [
+      "男"
+     ]
+    },
+    {
+     "t": "女",
+     "py": "nǚ",
+     "en": "woman, girl; female",
+     "ar": "",
+     "c": [
+      "女"
+     ]
+    },
+    {
+     "t": "说",
+     "py": "shuō",
+     "en": "to speak, to say; to scold, to upbraid",
+     "ar": "",
+     "c": [
+      "说"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "钱",
+     "py": "qián",
+     "en": "money, currency, coins",
+     "ar": "",
+     "c": [
+      "钱"
+     ]
+    },
+    {
+     "t": "头",
+     "py": "tóu",
+     "en": "head; chief, boss; first, top",
+     "ar": "",
+     "c": [
+      "头"
+     ]
+    },
+    {
+     "t": "耳",
+     "py": "ěr",
+     "en": "ear; to hear, to hear of; handle",
+     "ar": "",
+     "c": [
+      "耳"
+     ]
+    },
+    {
+     "t": "星",
+     "py": "xīng",
+     "en": "star, planet; a point of light",
+     "ar": "",
+     "c": [
+      "星"
+     ]
+    },
+    {
+     "t": "云",
+     "py": "yún",
+     "en": "cloud",
+     "ar": "",
+     "c": [
+      "云"
+     ]
+    },
+    {
+     "t": "画",
+     "py": "huà",
+     "en": "picture, painting, drawing; to draw",
+     "ar": "",
+     "c": [
+      "画"
+     ]
+    },
+    {
+     "t": "你好",
+     "py": "nǐhǎo",
+     "en": "hello",
+     "ar": "",
+     "c": [
+      "你",
+      "好"
+     ]
+    },
+    {
+     "t": "中国",
+     "py": "Zhōngguó",
+     "en": "China",
+     "ar": "",
+     "c": [
+      "中",
+      "国"
+     ]
+    },
+    {
+     "t": "中文",
+     "py": "Zhōngwén",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "中",
+      "文"
+     ]
+    },
+    {
+     "t": "阿联酋",
+     "py": "Āliánqiú",
+     "en": "the UAE",
+     "ar": "",
+     "c": [
+      "阿",
+      "联",
+      "酋"
+     ]
+    },
+    {
+     "t": "朋友",
+     "py": "péngyou",
+     "en": "friend",
+     "ar": "",
+     "c": [
+      "朋",
+      "友"
+     ]
+    },
+    {
+     "t": "爸爸",
+     "py": "bàba",
+     "en": "dad",
+     "ar": "",
+     "c": [
+      "爸",
+      "爸"
+     ]
+    },
+    {
+     "t": "妈妈",
+     "py": "māma",
+     "en": "mom",
+     "ar": "",
+     "c": [
+      "妈",
+      "妈"
+     ]
+    },
+    {
+     "t": "姐姐",
+     "py": "jiějie",
+     "en": "older sister",
+     "ar": "",
+     "c": [
+      "姐",
+      "姐"
+     ]
+    },
+    {
+     "t": "妹妹",
+     "py": "mèimei",
+     "en": "younger sister",
+     "ar": "",
+     "c": [
+      "妹",
+      "妹"
+     ]
+    },
+    {
+     "t": "老师",
+     "py": "lǎoshī",
+     "en": "teacher",
+     "ar": "",
+     "c": [
+      "老",
+      "师"
+     ]
+    },
+    {
+     "t": "苹果",
+     "py": "píngguǒ",
+     "en": "apple",
+     "ar": "",
+     "c": [
+      "苹",
+      "果"
+     ]
+    },
+    {
+     "t": "早上",
+     "py": "zǎoshang",
+     "en": "morning",
+     "ar": "",
+     "c": [
+      "早",
+      "上"
+     ]
+    },
+    {
+     "t": "下午",
+     "py": "xiàwǔ",
+     "en": "afternoon",
+     "ar": "",
+     "c": [
+      "下",
+      "午"
+     ]
+    },
+    {
+     "t": "回家",
+     "py": "huíjiā",
+     "en": "go home",
+     "ar": "",
+     "c": [
+      "回",
+      "家"
+     ]
+    },
+    {
+     "t": "喜欢",
+     "py": "xǐhuan",
+     "en": "to like",
+     "ar": "",
+     "c": [
+      "喜",
+      "欢"
+     ]
+    },
+    {
+     "t": "白色",
+     "py": "báisè",
+     "en": "white",
+     "ar": "",
+     "c": [
+      "白",
+      "色"
+     ]
+    },
+    {
+     "t": "飞机",
+     "py": "fēijī",
+     "en": "airplane",
+     "ar": "",
+     "c": [
+      "飞",
+      "机"
+     ]
+    },
+    {
+     "t": "今天",
+     "py": "jīntiān",
+     "en": "today",
+     "ar": "",
+     "c": [
+      "今",
+      "天"
+     ]
+    },
+    {
+     "t": "明天",
+     "py": "míngtiān",
+     "en": "tomorrow",
+     "ar": "",
+     "c": [
+      "明",
+      "天"
+     ]
+    },
+    {
+     "t": "太阳",
+     "py": "tàiyáng",
+     "en": "sun",
+     "ar": "",
+     "c": [
+      "太",
+      "阳"
+     ]
+    },
+    {
+     "t": "花园",
+     "py": "huāyuán",
+     "en": "garden",
+     "ar": "",
+     "c": [
+      "花",
+      "园"
+     ]
+    },
+    {
+     "t": "红色",
+     "py": "hóngsè",
+     "en": "red",
+     "ar": "",
+     "c": [
+      "红",
+      "色"
+     ]
+    },
+    {
+     "t": "唱歌",
+     "py": "chànggē",
+     "en": "to sing",
+     "ar": "",
+     "c": [
+      "唱",
+      "歌"
+     ]
+    },
+    {
+     "t": "学习",
+     "py": "xuéxí",
+     "en": "to study",
+     "ar": "",
+     "c": [
+      "学",
+      "习"
+     ]
+    },
+    {
+     "t": "医生",
+     "py": "yīshēng",
+     "en": "doctor",
+     "ar": "",
+     "c": [
+      "医",
+      "生"
+     ]
+    },
+    {
+     "t": "多少",
+     "py": "duōshǎo",
+     "en": "how many/much",
+     "ar": "",
+     "c": [
+      "多",
+      "少"
+     ]
+    },
+    {
+     "t": "本子",
+     "py": "běnzi",
+     "en": "notebook",
+     "ar": "",
+     "c": [
+      "本",
+      "子"
+     ]
+    },
+    {
+     "t": "天气",
+     "py": "tiānqì",
+     "en": "weather",
+     "ar": "",
+     "c": [
+      "天",
+      "气"
+     ]
+    },
+    {
+     "t": "牛奶",
+     "py": "niúnǎi",
+     "en": "milk",
+     "ar": "",
+     "c": [
+      "牛",
+      "奶"
+     ]
+    },
+    {
+     "t": "书包",
+     "py": "shūbāo",
+     "en": "schoolbag",
+     "ar": "",
+     "c": [
+      "书",
+      "包"
+     ]
+    }
+   ],
+   "write": [
+    {
+     "t": "四",
+     "py": "sì",
+     "en": "four",
+     "ar": "",
+     "c": [
+      "四"
+     ]
+    },
+    {
+     "t": "六",
+     "py": "liù",
+     "en": "six",
+     "ar": "",
+     "c": [
+      "六"
+     ]
+    },
+    {
+     "t": "手",
+     "py": "shǒu",
+     "en": "hand",
+     "ar": "",
+     "c": [
+      "手"
+     ]
+    },
+    {
+     "t": "水",
+     "py": "shuǐ",
+     "en": "water, liquid, lotion, juice",
+     "ar": "",
+     "c": [
+      "水"
+     ]
+    },
+    {
+     "t": "大",
+     "py": "dà",
+     "en": "big, great, vast, high, deep",
+     "ar": "",
+     "c": [
+      "大"
+     ]
+    },
+    {
+     "t": "小",
+     "py": "xiǎo",
+     "en": "small, tiny, insignificant",
+     "ar": "",
+     "c": [
+      "小"
+     ]
+    },
+    {
+     "t": "多",
+     "py": "duō",
+     "en": "much, many, multi-; more than, over",
+     "ar": "",
+     "c": [
+      "多"
+     ]
+    },
+    {
+     "t": "少",
+     "py": "shǎo",
+     "en": "few, little; less; inadequate",
+     "ar": "",
+     "c": [
+      "少"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "春",
+     "py": "chūn",
+     "en": "springtime; joyful, lustful, wanton",
+     "ar": "",
+     "c": [
+      "春"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "雨",
+     "py": "yǔ",
+     "en": "rain",
+     "ar": "",
+     "c": [
+      "雨"
+     ]
+    },
+    {
+     "t": "云",
+     "py": "yún",
+     "en": "cloud",
+     "ar": "",
+     "c": [
+      "云"
+     ]
+    },
+    {
+     "t": "头",
+     "py": "tóu",
+     "en": "head; chief, boss; first, top",
+     "ar": "",
+     "c": [
+      "头"
+     ]
+    },
+    {
+     "t": "鱼",
+     "py": "yú",
+     "en": "fish",
+     "ar": "",
+     "c": [
+      "鱼"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "星",
+     "py": "xīng",
+     "en": "star, planet; a point of light",
+     "ar": "",
+     "c": [
+      "星"
+     ]
+    },
+    {
+     "t": "画",
+     "py": "huà",
+     "en": "picture, painting, drawing; to draw",
+     "ar": "",
+     "c": [
+      "画"
+     ]
+    },
+    {
+     "t": "日",
+     "py": "rì",
+     "en": "sun; day; daytime",
+     "ar": "",
+     "c": [
+      "日"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "中文",
+     "py": "Zhōngwén",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "中",
+      "文"
+     ]
+    },
+    {
+     "t": "你好",
+     "py": "nǐhǎo",
+     "en": "hello",
+     "ar": "",
+     "c": [
+      "你",
+      "好"
+     ]
+    },
+    {
+     "t": "早上",
+     "py": "zǎoshang",
+     "en": "morning",
+     "ar": "",
+     "c": [
+      "早",
+      "上"
+     ]
+    },
+    {
+     "t": "回家",
+     "py": "huíjiā",
+     "en": "go home",
+     "ar": "",
+     "c": [
+      "回",
+      "家"
+     ]
+    },
+    {
+     "t": "白色",
+     "py": "báisè",
+     "en": "white",
+     "ar": "",
+     "c": [
+      "白",
+      "色"
+     ]
+    },
+    {
+     "t": "飞机",
+     "py": "fēijī",
+     "en": "airplane",
+     "ar": "",
+     "c": [
+      "飞",
+      "机"
+     ]
+    },
+    {
+     "t": "今天",
+     "py": "jīntiān",
+     "en": "today",
+     "ar": "",
+     "c": [
+      "今",
+      "天"
+     ]
+    },
+    {
+     "t": "太阳",
+     "py": "tàiyáng",
+     "en": "sun",
+     "ar": "",
+     "c": [
+      "太",
+      "阳"
+     ]
+    },
+    {
+     "t": "本子",
+     "py": "běnzi",
+     "en": "notebook",
+     "ar": "",
+     "c": [
+      "本",
+      "子"
+     ]
+    },
+    {
+     "t": "书包",
+     "py": "shūbāo",
+     "en": "schoolbag",
+     "ar": "",
+     "c": [
+      "书",
+      "包"
+     ]
+    }
+   ]
+  },
+  "2": {
+   "base": [
+    {
+     "t": "我",
+     "py": "wǒ",
+     "en": "I, me, my; our, us",
+     "ar": "",
+     "c": [
+      "我"
+     ]
+    },
+    {
+     "t": "你",
+     "py": "nǐ",
+     "en": "you, second person pronoun",
+     "ar": "",
+     "c": [
+      "你"
+     ]
+    },
+    {
+     "t": "她",
+     "py": "tā",
+     "en": "she, her",
+     "ar": "",
+     "c": [
+      "她"
+     ]
+    },
+    {
+     "t": "他",
+     "py": "tā",
+     "en": "other, another; he, she, it",
+     "ar": "",
+     "c": [
+      "他"
+     ]
+    },
+    {
+     "t": "它",
+     "py": "tā",
+     "en": "it; other",
+     "ar": "",
+     "c": [
+      "它"
+     ]
+    },
+    {
+     "t": "我们",
+     "py": "wǒmen",
+     "en": "we",
+     "ar": "",
+     "c": [
+      "我",
+      "们"
+     ]
+    },
+    {
+     "t": "你们",
+     "py": "nǐmen",
+     "en": "you (plural)",
+     "ar": "",
+     "c": [
+      "你",
+      "们"
+     ]
+    },
+    {
+     "t": "他们",
+     "py": "tāmen",
+     "en": "they (m.)",
+     "ar": "",
+     "c": [
+      "他",
+      "们"
+     ]
+    },
+    {
+     "t": "她们",
+     "py": "tāmen",
+     "en": "they (f.)",
+     "ar": "",
+     "c": [
+      "她",
+      "们"
+     ]
+    },
+    {
+     "t": "是",
+     "py": "shì",
+     "en": "to be; indeed, right, yes; okay",
+     "ar": "",
+     "c": [
+      "是"
+     ]
+    },
+    {
+     "t": "很",
+     "py": "hěn",
+     "en": "very, quite, much",
+     "ar": "",
+     "c": [
+      "很"
+     ]
+    },
+    {
+     "t": "在",
+     "py": "zài",
+     "en": "at, in, on; to exist; used to indicate the present progressive tense",
+     "ar": "",
+     "c": [
+      "在"
+     ]
+    },
+    {
+     "t": "的",
+     "py": "de",
+     "en": "aim, goal; of; possessive particle; -self suffix",
+     "ar": "",
+     "c": [
+      "的"
+     ]
+    },
+    {
+     "t": "不",
+     "py": "bù",
+     "en": "no, not, un-; negative prefix",
+     "ar": "",
+     "c": [
+      "不"
+     ]
+    },
+    {
+     "t": "什么",
+     "py": "shénme",
+     "en": "what",
+     "ar": "",
+     "c": [
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "谁",
+     "py": "shéi/shuí",
+     "en": "who? whom? whose? anyone?",
+     "ar": "",
+     "c": [
+      "谁"
+     ]
+    },
+    {
+     "t": "几",
+     "py": "jǐ",
+     "en": "small table; how many; a few, some",
+     "ar": "",
+     "c": [
+      "几"
+     ]
+    },
+    {
+     "t": "多少",
+     "py": "duōshǎo",
+     "en": "how many/much",
+     "ar": "",
+     "c": [
+      "多",
+      "少"
+     ]
+    },
+    {
+     "t": "怎么",
+     "py": "zěnme",
+     "en": "how",
+     "ar": "",
+     "c": [
+      "怎",
+      "么"
+     ]
+    },
+    {
+     "t": "怎么样",
+     "py": "zěnmeyàng",
+     "en": "how about; how is it",
+     "ar": "",
+     "c": [
+      "怎",
+      "么",
+      "样"
+     ]
+    },
+    {
+     "t": "哪",
+     "py": "nǎ",
+     "en": "which? where? how?",
+     "ar": "",
+     "c": [
+      "哪"
+     ]
+    },
+    {
+     "t": "哪里",
+     "py": "nǎlǐ",
+     "en": "where",
+     "ar": "",
+     "c": [
+      "哪",
+      "里"
+     ]
+    },
+    {
+     "t": "为什么",
+     "py": "wèishénme",
+     "en": "why",
+     "ar": "",
+     "c": [
+      "为",
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "吗",
+     "py": "ma",
+     "en": "final interrogative particle",
+     "ar": "",
+     "c": [
+      "吗"
+     ]
+    },
+    {
+     "t": "呢",
+     "py": "ne",
+     "en": "wool; interrogative or emphatic final particle",
+     "ar": "",
+     "c": [
+      "呢"
+     ]
+    },
+    {
+     "t": "吧",
+     "py": "ba",
+     "en": "emphatic final particle",
+     "ar": "",
+     "c": [
+      "吧"
+     ]
+    },
+    {
+     "t": "这",
+     "py": "zhè",
+     "en": "this, these; such; here",
+     "ar": "",
+     "c": [
+      "这"
+     ]
+    },
+    {
+     "t": "那",
+     "py": "nà",
+     "en": "that, that one, those",
+     "ar": "",
+     "c": [
+      "那"
+     ]
+    },
+    {
+     "t": "有",
+     "py": "yǒu",
+     "en": "to have, to own, to possess; to exist",
+     "ar": "",
+     "c": [
+      "有"
+     ]
+    },
+    {
+     "t": "和",
+     "py": "hé",
+     "en": "harmony, peace; calm, peaceful",
+     "ar": "",
+     "c": [
+      "和"
+     ]
+    },
+    {
+     "t": "一",
+     "py": "yī",
+     "en": "one; a, an; alone",
+     "ar": "",
+     "c": [
+      "一"
+     ]
+    },
+    {
+     "t": "二",
+     "py": "èr",
+     "en": "two; twice",
+     "ar": "",
+     "c": [
+      "二"
+     ]
+    },
+    {
+     "t": "三",
+     "py": "sān",
+     "en": "three",
+     "ar": "",
+     "c": [
+      "三"
+     ]
+    },
+    {
+     "t": "四",
+     "py": "sì",
+     "en": "four",
+     "ar": "",
+     "c": [
+      "四"
+     ]
+    },
+    {
+     "t": "五",
+     "py": "wǔ",
+     "en": "five; surname",
+     "ar": "",
+     "c": [
+      "五"
+     ]
+    },
+    {
+     "t": "六",
+     "py": "liù",
+     "en": "six",
+     "ar": "",
+     "c": [
+      "六"
+     ]
+    },
+    {
+     "t": "七",
+     "py": "qī",
+     "en": "seven",
+     "ar": "",
+     "c": [
+      "七"
+     ]
+    },
+    {
+     "t": "八",
+     "py": "bā",
+     "en": "eight; all around, all sides",
+     "ar": "",
+     "c": [
+      "八"
+     ]
+    },
+    {
+     "t": "九",
+     "py": "jiǔ",
+     "en": "nine",
+     "ar": "",
+     "c": [
+      "九"
+     ]
+    },
+    {
+     "t": "十",
+     "py": "shí",
+     "en": "ten, tenth; complete; perfect",
+     "ar": "",
+     "c": [
+      "十"
+     ]
+    }
+   ],
+   "read": [
+    {
+     "t": "人",
+     "py": "rén",
+     "en": "man, person; people",
+     "ar": "",
+     "c": [
+      "人"
+     ]
+    },
+    {
+     "t": "叫",
+     "py": "jiào",
+     "en": "cry, shout; to call, to greet, to hail",
+     "ar": "",
+     "c": [
+      "叫"
+     ]
+    },
+    {
+     "t": "岁",
+     "py": "suì",
+     "en": "year; years old, age; harvest",
+     "ar": "",
+     "c": [
+      "岁"
+     ]
+    },
+    {
+     "t": "年",
+     "py": "nián",
+     "en": "year; anniversary; a person's age",
+     "ar": "",
+     "c": [
+      "年"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "日",
+     "py": "rì",
+     "en": "sun; day; daytime",
+     "ar": "",
+     "c": [
+      "日"
+     ]
+    },
+    {
+     "t": "点",
+     "py": "diǎn",
+     "en": "dot, point, speck",
+     "ar": "",
+     "c": [
+      "点"
+     ]
+    },
+    {
+     "t": "半",
+     "py": "bàn",
+     "en": "half; semi-, incomplete",
+     "ar": "",
+     "c": [
+      "半"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "看",
+     "py": "kàn",
+     "en": "to look, to see; to examine, to scrutinize",
+     "ar": "",
+     "c": [
+      "看"
+     ]
+    },
+    {
+     "t": "听",
+     "py": "tīng",
+     "en": "to hear, to listen; to understand; to obey",
+     "ar": "",
+     "c": [
+      "听"
+     ]
+    },
+    {
+     "t": "说",
+     "py": "shuō",
+     "en": "to speak, to say; to scold, to upbraid",
+     "ar": "",
+     "c": [
+      "说"
+     ]
+    },
+    {
+     "t": "写",
+     "py": "xiě",
+     "en": "to write; to draw, to sketch; to compose",
+     "ar": "",
+     "c": [
+      "写"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "喝",
+     "py": "hē",
+     "en": "to drink; to shout, to call out",
+     "ar": "",
+     "c": [
+      "喝"
+     ]
+    },
+    {
+     "t": "唱",
+     "py": "chàng",
+     "en": "to sing, to chant, to call; ditty, song",
+     "ar": "",
+     "c": [
+      "唱"
+     ]
+    },
+    {
+     "t": "大",
+     "py": "dà",
+     "en": "big, great, vast, high, deep",
+     "ar": "",
+     "c": [
+      "大"
+     ]
+    },
+    {
+     "t": "小",
+     "py": "xiǎo",
+     "en": "small, tiny, insignificant",
+     "ar": "",
+     "c": [
+      "小"
+     ]
+    },
+    {
+     "t": "冷",
+     "py": "lěng",
+     "en": "cold, cool; lonely",
+     "ar": "",
+     "c": [
+      "冷"
+     ]
+    },
+    {
+     "t": "热",
+     "py": "rè",
+     "en": "heat, fever, zeal",
+     "ar": "",
+     "c": [
+      "热"
+     ]
+    },
+    {
+     "t": "春",
+     "py": "chūn",
+     "en": "springtime; joyful, lustful, wanton",
+     "ar": "",
+     "c": [
+      "春"
+     ]
+    },
+    {
+     "t": "夏",
+     "py": "xià",
+     "en": "summer; the Xia or Hsia dynasty",
+     "ar": "",
+     "c": [
+      "夏"
+     ]
+    },
+    {
+     "t": "秋",
+     "py": "qiū",
+     "en": "autumn, fall; year",
+     "ar": "",
+     "c": [
+      "秋"
+     ]
+    },
+    {
+     "t": "冬",
+     "py": "dōng",
+     "en": "winter, 11th lunar month",
+     "ar": "",
+     "c": [
+      "冬"
+     ]
+    },
+    {
+     "t": "也",
+     "py": "yě",
+     "en": "also, too",
+     "ar": "",
+     "c": [
+      "也"
+     ]
+    },
+    {
+     "t": "都",
+     "py": "dōu",
+     "en": "all, each, entirely, whole; metropolis; capital",
+     "ar": "",
+     "c": [
+      "都"
+     ]
+    },
+    {
+     "t": "水",
+     "py": "shuǐ",
+     "en": "water, liquid, lotion, juice",
+     "ar": "",
+     "c": [
+      "水"
+     ]
+    },
+    {
+     "t": "茶",
+     "py": "chá",
+     "en": "tea; tea leaves; tea plant",
+     "ar": "",
+     "c": [
+      "茶"
+     ]
+    },
+    {
+     "t": "忙",
+     "py": "máng",
+     "en": "busy, hurried, pressed for time",
+     "ar": "",
+     "c": [
+      "忙"
+     ]
+    },
+    {
+     "t": "想",
+     "py": "xiǎng",
+     "en": "to believe, to wish for; to consider, to plan, to think",
+     "ar": "",
+     "c": [
+      "想"
+     ]
+    },
+    {
+     "t": "累",
+     "py": "lèi",
+     "en": "tired; to accumulate; to involve; bother, nuisance",
+     "ar": "",
+     "c": [
+      "累"
+     ]
+    },
+    {
+     "t": "会",
+     "py": "huì",
+     "en": "to assemble, to meet; meeting; association, group",
+     "ar": "",
+     "c": [
+      "会"
+     ]
+    },
+    {
+     "t": "两",
+     "py": "liǎng",
+     "en": "two, both, pair, couple; ounce",
+     "ar": "",
+     "c": [
+      "两"
+     ]
+    },
+    {
+     "t": "来",
+     "py": "lái",
+     "en": "to arrive, to come, to return; in the future, later on",
+     "ar": "",
+     "c": [
+      "来"
+     ]
+    },
+    {
+     "t": "去",
+     "py": "qù",
+     "en": "to go away, to leave, to depart",
+     "ar": "",
+     "c": [
+      "去"
+     ]
+    },
+    {
+     "t": "远",
+     "py": "yuǎn",
+     "en": "distant, remote, far; profound",
+     "ar": "",
+     "c": [
+      "远"
+     ]
+    },
+    {
+     "t": "近",
+     "py": "jìn",
+     "en": "to approach; near, close; intimate",
+     "ar": "",
+     "c": [
+      "近"
+     ]
+    },
+    {
+     "t": "猫",
+     "py": "māo",
+     "en": "cat",
+     "ar": "",
+     "c": [
+      "猫"
+     ]
+    },
+    {
+     "t": "狗",
+     "py": "gǒu",
+     "en": "dog",
+     "ar": "",
+     "c": [
+      "狗"
+     ]
+    },
+    {
+     "t": "只",
+     "py": "zhī",
+     "en": "only, merely, just",
+     "ar": "",
+     "c": [
+      "只"
+     ]
+    },
+    {
+     "t": "左",
+     "py": "zuǒ",
+     "en": "left; unorthodox, improper",
+     "ar": "",
+     "c": [
+      "左"
+     ]
+    },
+    {
+     "t": "右",
+     "py": "yòu",
+     "en": "right; right-wing",
+     "ar": "",
+     "c": [
+      "右"
+     ]
+    },
+    {
+     "t": "走",
+     "py": "zǒu",
+     "en": "to walk, to run, to flee",
+     "ar": "",
+     "c": [
+      "走"
+     ]
+    },
+    {
+     "t": "头",
+     "py": "tóu",
+     "en": "head; chief, boss; first, top",
+     "ar": "",
+     "c": [
+      "头"
+     ]
+    },
+    {
+     "t": "手",
+     "py": "shǒu",
+     "en": "hand",
+     "ar": "",
+     "c": [
+      "手"
+     ]
+    },
+    {
+     "t": "比",
+     "py": "bǐ",
+     "en": "to compare, liken; comparison; than",
+     "ar": "",
+     "c": [
+      "比"
+     ]
+    },
+    {
+     "t": "肉",
+     "py": "ròu",
+     "en": "meat; flesh",
+     "ar": "",
+     "c": [
+      "肉"
+     ]
+    },
+    {
+     "t": "长",
+     "py": "cháng",
+     "en": "long, lasting; to excel in",
+     "ar": "",
+     "c": [
+      "长"
+     ]
+    },
+    {
+     "t": "短",
+     "py": "duǎn",
+     "en": "brief, short; deficient, lacking",
+     "ar": "",
+     "c": [
+      "短"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "本",
+     "py": "běn",
+     "en": "root, origin, source; basis",
+     "ar": "",
+     "c": [
+      "本"
+     ]
+    },
+    {
+     "t": "读",
+     "py": "dú",
+     "en": "to study, to learn; to read, to pronounce",
+     "ar": "",
+     "c": [
+      "读"
+     ]
+    },
+    {
+     "t": "前",
+     "py": "qián",
+     "en": "in front, forward; former, preceding",
+     "ar": "",
+     "c": [
+      "前"
+     ]
+    },
+    {
+     "t": "后",
+     "py": "hòu",
+     "en": "after; behind, rear; descendants",
+     "ar": "",
+     "c": [
+      "后"
+     ]
+    },
+    {
+     "t": "买",
+     "py": "mǎi",
+     "en": "to buy, to purchase; to bribe, to persuade",
+     "ar": "",
+     "c": [
+      "买"
+     ]
+    },
+    {
+     "t": "千",
+     "py": "qiān",
+     "en": "thousand; many, numerous; very",
+     "ar": "",
+     "c": [
+      "千"
+     ]
+    },
+    {
+     "t": "玩",
+     "py": "wán",
+     "en": "to play with, to joke, to entertain",
+     "ar": "",
+     "c": [
+      "玩"
+     ]
+    },
+    {
+     "t": "高",
+     "py": "gāo",
+     "en": "tall, lofty; high, elevated",
+     "ar": "",
+     "c": [
+      "高"
+     ]
+    },
+    {
+     "t": "画",
+     "py": "huà",
+     "en": "picture, painting, drawing; to draw",
+     "ar": "",
+     "c": [
+      "画"
+     ]
+    },
+    {
+     "t": "洗",
+     "py": "xǐ",
+     "en": "to bathe, to rinse, to wash",
+     "ar": "",
+     "c": [
+      "洗"
+     ]
+    },
+    {
+     "t": "你好",
+     "py": "nǐhǎo",
+     "en": "hello",
+     "ar": "",
+     "c": [
+      "你",
+      "好"
+     ]
+    },
+    {
+     "t": "再见",
+     "py": "zàijiàn",
+     "en": "goodbye",
+     "ar": "",
+     "c": [
+      "再",
+      "见"
+     ]
+    },
+    {
+     "t": "谢谢",
+     "py": "xièxie",
+     "en": "thank you",
+     "ar": "",
+     "c": [
+      "谢",
+      "谢"
+     ]
+    },
+    {
+     "t": "老师",
+     "py": "lǎoshī",
+     "en": "teacher",
+     "ar": "",
+     "c": [
+      "老",
+      "师"
+     ]
+    },
+    {
+     "t": "名字",
+     "py": "míngzi",
+     "en": "name",
+     "ar": "",
+     "c": [
+      "名",
+      "字"
+     ]
+    },
+    {
+     "t": "认识",
+     "py": "rènshi",
+     "en": "to know (sb.)",
+     "ar": "",
+     "c": [
+      "认",
+      "识"
+     ]
+    },
+    {
+     "t": "高兴",
+     "py": "gāoxìng",
+     "en": "happy; glad",
+     "ar": "",
+     "c": [
+      "高",
+      "兴"
+     ]
+    },
+    {
+     "t": "中国",
+     "py": "Zhōngguó",
+     "en": "China",
+     "ar": "",
+     "c": [
+      "中",
+      "国"
+     ]
+    },
+    {
+     "t": "阿联酋",
+     "py": "Āliánqiú",
+     "en": "the UAE",
+     "ar": "",
+     "c": [
+      "阿",
+      "联",
+      "酋"
+     ]
+    },
+    {
+     "t": "中文",
+     "py": "Zhōngwén",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "中",
+      "文"
+     ]
+    },
+    {
+     "t": "国家",
+     "py": "guójiā",
+     "en": "country",
+     "ar": "",
+     "c": [
+      "国",
+      "家"
+     ]
+    },
+    {
+     "t": "汉语",
+     "py": "Hànyǔ",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "汉",
+      "语"
+     ]
+    },
+    {
+     "t": "晴天",
+     "py": "qíngtiān",
+     "en": "sunny day",
+     "ar": "",
+     "c": [
+      "晴",
+      "天"
+     ]
+    },
+    {
+     "t": "下雨",
+     "py": "xiàyǔ",
+     "en": "to rain",
+     "ar": "",
+     "c": [
+      "下",
+      "雨"
+     ]
+    },
+    {
+     "t": "下雪",
+     "py": "xiàxuě",
+     "en": "to snow",
+     "ar": "",
+     "c": [
+      "下",
+      "雪"
+     ]
+    },
+    {
+     "t": "星期",
+     "py": "xīngqī",
+     "en": "week",
+     "ar": "",
+     "c": [
+      "星",
+      "期"
+     ]
+    },
+    {
+     "t": "今天",
+     "py": "jīntiān",
+     "en": "today",
+     "ar": "",
+     "c": [
+      "今",
+      "天"
+     ]
+    },
+    {
+     "t": "上课",
+     "py": "shàngkè",
+     "en": "attend class",
+     "ar": "",
+     "c": [
+      "上",
+      "课"
+     ]
+    },
+    {
+     "t": "上学",
+     "py": "shàngxué",
+     "en": "go to school",
+     "ar": "",
+     "c": [
+      "上",
+      "学"
+     ]
+    },
+    {
+     "t": "回家",
+     "py": "huíjiā",
+     "en": "go home",
+     "ar": "",
+     "c": [
+      "回",
+      "家"
+     ]
+    },
+    {
+     "t": "爸爸",
+     "py": "bàba",
+     "en": "dad",
+     "ar": "",
+     "c": [
+      "爸",
+      "爸"
+     ]
+    },
+    {
+     "t": "妈妈",
+     "py": "māma",
+     "en": "mom",
+     "ar": "",
+     "c": [
+      "妈",
+      "妈"
+     ]
+    },
+    {
+     "t": "爷爷",
+     "py": "yéye",
+     "en": "grandpa",
+     "ar": "",
+     "c": [
+      "爷",
+      "爷"
+     ]
+    },
+    {
+     "t": "奶奶",
+     "py": "nǎinai",
+     "en": "grandma",
+     "ar": "",
+     "c": [
+      "奶",
+      "奶"
+     ]
+    },
+    {
+     "t": "哥哥",
+     "py": "gēge",
+     "en": "older brother",
+     "ar": "",
+     "c": [
+      "哥",
+      "哥"
+     ]
+    },
+    {
+     "t": "姐姐",
+     "py": "jiějie",
+     "en": "older sister",
+     "ar": "",
+     "c": [
+      "姐",
+      "姐"
+     ]
+    },
+    {
+     "t": "妹妹",
+     "py": "mèimei",
+     "en": "younger sister",
+     "ar": "",
+     "c": [
+      "妹",
+      "妹"
+     ]
+    },
+    {
+     "t": "现在",
+     "py": "xiànzài",
+     "en": "now",
+     "ar": "",
+     "c": [
+      "现",
+      "在"
+     ]
+    },
+    {
+     "t": "上午",
+     "py": "shàngwǔ",
+     "en": "morning (forenoon)",
+     "ar": "",
+     "c": [
+      "上",
+      "午"
+     ]
+    },
+    {
+     "t": "中午",
+     "py": "zhōngwǔ",
+     "en": "noon",
+     "ar": "",
+     "c": [
+      "中",
+      "午"
+     ]
+    },
+    {
+     "t": "下午",
+     "py": "xiàwǔ",
+     "en": "afternoon",
+     "ar": "",
+     "c": [
+      "下",
+      "午"
+     ]
+    },
+    {
+     "t": "晚上",
+     "py": "wǎnshang",
+     "en": "evening",
+     "ar": "",
+     "c": [
+      "晚",
+      "上"
+     ]
+    },
+    {
+     "t": "学生",
+     "py": "xuésheng",
+     "en": "student",
+     "ar": "",
+     "c": [
+      "学",
+      "生"
+     ]
+    },
+    {
+     "t": "学习",
+     "py": "xuéxí",
+     "en": "to study",
+     "ar": "",
+     "c": [
+      "学",
+      "习"
+     ]
+    },
+    {
+     "t": "学校",
+     "py": "xuéxiào",
+     "en": "school",
+     "ar": "",
+     "c": [
+      "学",
+      "校"
+     ]
+    },
+    {
+     "t": "工作",
+     "py": "gōngzuò",
+     "en": "work; job",
+     "ar": "",
+     "c": [
+      "工",
+      "作"
+     ]
+    },
+    {
+     "t": "起床",
+     "py": "qǐchuáng",
+     "en": "get up",
+     "ar": "",
+     "c": [
+      "起",
+      "床"
+     ]
+    },
+    {
+     "t": "睡觉",
+     "py": "shuìjiào",
+     "en": "to sleep",
+     "ar": "",
+     "c": [
+      "睡",
+      "觉"
+     ]
+    },
+    {
+     "t": "喜欢",
+     "py": "xǐhuan",
+     "en": "to like",
+     "ar": "",
+     "c": [
+      "喜",
+      "欢"
+     ]
+    },
+    {
+     "t": "每天",
+     "py": "měitiān",
+     "en": "every day",
+     "ar": "",
+     "c": [
+      "每",
+      "天"
+     ]
+    },
+    {
+     "t": "唱歌",
+     "py": "chànggē",
+     "en": "to sing",
+     "ar": "",
+     "c": [
+      "唱",
+      "歌"
+     ]
+    },
+    {
+     "t": "熊猫",
+     "py": "xióngmāo",
+     "en": "panda",
+     "ar": "",
+     "c": [
+      "熊",
+      "猫"
+     ]
+    },
+    {
+     "t": "音乐",
+     "py": "yīnyuè",
+     "en": "music",
+     "ar": "",
+     "c": [
+      "音",
+      "乐"
+     ]
+    },
+    {
+     "t": "朋友",
+     "py": "péngyou",
+     "en": "friend",
+     "ar": "",
+     "c": [
+      "朋",
+      "友"
+     ]
+    },
+    {
+     "t": "生日",
+     "py": "shēngrì",
+     "en": "birthday",
+     "ar": "",
+     "c": [
+      "生",
+      "日"
+     ]
+    },
+    {
+     "t": "快乐",
+     "py": "kuàilè",
+     "en": "happy",
+     "ar": "",
+     "c": [
+      "快",
+      "乐"
+     ]
+    },
+    {
+     "t": "礼物",
+     "py": "lǐwù",
+     "en": "gift",
+     "ar": "",
+     "c": [
+      "礼",
+      "物"
+     ]
+    },
+    {
+     "t": "爱好",
+     "py": "àihào",
+     "en": "hobby",
+     "ar": "",
+     "c": [
+      "爱",
+      "好"
+     ]
+    },
+    {
+     "t": "跑步",
+     "py": "pǎobù",
+     "en": "to run; jog",
+     "ar": "",
+     "c": [
+      "跑",
+      "步"
+     ]
+    },
+    {
+     "t": "儿子",
+     "py": "érzi",
+     "en": "son",
+     "ar": "",
+     "c": [
+      "儿",
+      "子"
+     ]
+    },
+    {
+     "t": "女儿",
+     "py": "nǚ'ér",
+     "en": "daughter",
+     "ar": "",
+     "c": [
+      "女",
+      "儿"
+     ]
+    },
+    {
+     "t": "电视",
+     "py": "diànshì",
+     "en": "TV",
+     "ar": "",
+     "c": [
+      "电",
+      "视"
+     ]
+    },
+    {
+     "t": "火车",
+     "py": "huǒchē",
+     "en": "train",
+     "ar": "",
+     "c": [
+      "火",
+      "车"
+     ]
+    },
+    {
+     "t": "鸡蛋",
+     "py": "jīdàn",
+     "en": "egg",
+     "ar": "",
+     "c": [
+      "鸡",
+      "蛋"
+     ]
+    },
+    {
+     "t": "面包",
+     "py": "miànbāo",
+     "en": "bread",
+     "ar": "",
+     "c": [
+      "面",
+      "包"
+     ]
+    },
+    {
+     "t": "米饭",
+     "py": "mǐfàn",
+     "en": "(cooked) rice",
+     "ar": "",
+     "c": [
+      "米",
+      "饭"
+     ]
+    },
+    {
+     "t": "牛奶",
+     "py": "niúnǎi",
+     "en": "milk",
+     "ar": "",
+     "c": [
+      "牛",
+      "奶"
+     ]
+    },
+    {
+     "t": "书包",
+     "py": "shūbāo",
+     "en": "schoolbag",
+     "ar": "",
+     "c": [
+      "书",
+      "包"
+     ]
+    },
+    {
+     "t": "白色",
+     "py": "báisè",
+     "en": "white",
+     "ar": "",
+     "c": [
+      "白",
+      "色"
+     ]
+    },
+    {
+     "t": "足球",
+     "py": "zúqiú",
+     "en": "soccer",
+     "ar": "",
+     "c": [
+      "足",
+      "球"
+     ]
+    }
+   ],
+   "write": [
+    {
+     "t": "我",
+     "py": "wǒ",
+     "en": "I, me, my; our, us",
+     "ar": "",
+     "c": [
+      "我"
+     ]
+    },
+    {
+     "t": "年",
+     "py": "nián",
+     "en": "year; anniversary; a person's age",
+     "ar": "",
+     "c": [
+      "年"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "前",
+     "py": "qián",
+     "en": "in front, forward; former, preceding",
+     "ar": "",
+     "c": [
+      "前"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "看",
+     "py": "kàn",
+     "en": "to look, to see; to examine, to scrutinize",
+     "ar": "",
+     "c": [
+      "看"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "唱",
+     "py": "chàng",
+     "en": "to sing, to chant, to call; ditty, song",
+     "ar": "",
+     "c": [
+      "唱"
+     ]
+    },
+    {
+     "t": "春",
+     "py": "chūn",
+     "en": "springtime; joyful, lustful, wanton",
+     "ar": "",
+     "c": [
+      "春"
+     ]
+    },
+    {
+     "t": "茶",
+     "py": "chá",
+     "en": "tea; tea leaves; tea plant",
+     "ar": "",
+     "c": [
+      "茶"
+     ]
+    },
+    {
+     "t": "水",
+     "py": "shuǐ",
+     "en": "water, liquid, lotion, juice",
+     "ar": "",
+     "c": [
+      "水"
+     ]
+    },
+    {
+     "t": "忙",
+     "py": "máng",
+     "en": "busy, hurried, pressed for time",
+     "ar": "",
+     "c": [
+      "忙"
+     ]
+    },
+    {
+     "t": "想",
+     "py": "xiǎng",
+     "en": "to believe, to wish for; to consider, to plan, to think",
+     "ar": "",
+     "c": [
+      "想"
+     ]
+    },
+    {
+     "t": "半",
+     "py": "bàn",
+     "en": "half; semi-, incomplete",
+     "ar": "",
+     "c": [
+      "半"
+     ]
+    },
+    {
+     "t": "点",
+     "py": "diǎn",
+     "en": "dot, point, speck",
+     "ar": "",
+     "c": [
+      "点"
+     ]
+    },
+    {
+     "t": "冷",
+     "py": "lěng",
+     "en": "cold, cool; lonely",
+     "ar": "",
+     "c": [
+      "冷"
+     ]
+    },
+    {
+     "t": "只",
+     "py": "zhī",
+     "en": "only, merely, just",
+     "ar": "",
+     "c": [
+      "只"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "高",
+     "py": "gāo",
+     "en": "tall, lofty; high, elevated",
+     "ar": "",
+     "c": [
+      "高"
+     ]
+    },
+    {
+     "t": "来",
+     "py": "lái",
+     "en": "to arrive, to come, to return; in the future, later on",
+     "ar": "",
+     "c": [
+      "来"
+     ]
+    },
+    {
+     "t": "去",
+     "py": "qù",
+     "en": "to go away, to leave, to depart",
+     "ar": "",
+     "c": [
+      "去"
+     ]
+    },
+    {
+     "t": "写",
+     "py": "xiě",
+     "en": "to write; to draw, to sketch; to compose",
+     "ar": "",
+     "c": [
+      "写"
+     ]
+    },
+    {
+     "t": "肉",
+     "py": "ròu",
+     "en": "meat; flesh",
+     "ar": "",
+     "c": [
+      "肉"
+     ]
+    },
+    {
+     "t": "两",
+     "py": "liǎng",
+     "en": "two, both, pair, couple; ounce",
+     "ar": "",
+     "c": [
+      "两"
+     ]
+    },
+    {
+     "t": "走",
+     "py": "zǒu",
+     "en": "to walk, to run, to flee",
+     "ar": "",
+     "c": [
+      "走"
+     ]
+    },
+    {
+     "t": "你好",
+     "py": "nǐhǎo",
+     "en": "hello",
+     "ar": "",
+     "c": [
+      "你",
+      "好"
+     ]
+    },
+    {
+     "t": "中国",
+     "py": "Zhōngguó",
+     "en": "China",
+     "ar": "",
+     "c": [
+      "中",
+      "国"
+     ]
+    },
+    {
+     "t": "汉语",
+     "py": "Hànyǔ",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "汉",
+      "语"
+     ]
+    },
+    {
+     "t": "下雨",
+     "py": "xiàyǔ",
+     "en": "to rain",
+     "ar": "",
+     "c": [
+      "下",
+      "雨"
+     ]
+    },
+    {
+     "t": "星期",
+     "py": "xīngqī",
+     "en": "week",
+     "ar": "",
+     "c": [
+      "星",
+      "期"
+     ]
+    },
+    {
+     "t": "学校",
+     "py": "xuéxiào",
+     "en": "school",
+     "ar": "",
+     "c": [
+      "学",
+      "校"
+     ]
+    },
+    {
+     "t": "生日",
+     "py": "shēngrì",
+     "en": "birthday",
+     "ar": "",
+     "c": [
+      "生",
+      "日"
+     ]
+    },
+    {
+     "t": "晴天",
+     "py": "qíngtiān",
+     "en": "sunny day",
+     "ar": "",
+     "c": [
+      "晴",
+      "天"
+     ]
+    },
+    {
+     "t": "多少",
+     "py": "duōshǎo",
+     "en": "how many/much",
+     "ar": "",
+     "c": [
+      "多",
+      "少"
+     ]
+    },
+    {
+     "t": "朋友",
+     "py": "péngyou",
+     "en": "friend",
+     "ar": "",
+     "c": [
+      "朋",
+      "友"
+     ]
+    },
+    {
+     "t": "火车",
+     "py": "huǒchē",
+     "en": "train",
+     "ar": "",
+     "c": [
+      "火",
+      "车"
+     ]
+    },
+    {
+     "t": "足球",
+     "py": "zúqiú",
+     "en": "soccer",
+     "ar": "",
+     "c": [
+      "足",
+      "球"
+     ]
+    },
+    {
+     "t": "白色",
+     "py": "báisè",
+     "en": "white",
+     "ar": "",
+     "c": [
+      "白",
+      "色"
+     ]
+    },
+    {
+     "t": "牛奶",
+     "py": "niúnǎi",
+     "en": "milk",
+     "ar": "",
+     "c": [
+      "牛",
+      "奶"
+     ]
+    },
+    {
+     "t": "米饭",
+     "py": "mǐfàn",
+     "en": "(cooked) rice",
+     "ar": "",
+     "c": [
+      "米",
+      "饭"
+     ]
+    }
+   ]
+  },
+  "3": {
+   "base": [
+    {
+     "t": "我",
+     "py": "wǒ",
+     "en": "I, me, my; our, us",
+     "ar": "",
+     "c": [
+      "我"
+     ]
+    },
+    {
+     "t": "你",
+     "py": "nǐ",
+     "en": "you, second person pronoun",
+     "ar": "",
+     "c": [
+      "你"
+     ]
+    },
+    {
+     "t": "她",
+     "py": "tā",
+     "en": "she, her",
+     "ar": "",
+     "c": [
+      "她"
+     ]
+    },
+    {
+     "t": "他",
+     "py": "tā",
+     "en": "other, another; he, she, it",
+     "ar": "",
+     "c": [
+      "他"
+     ]
+    },
+    {
+     "t": "它",
+     "py": "tā",
+     "en": "it; other",
+     "ar": "",
+     "c": [
+      "它"
+     ]
+    },
+    {
+     "t": "我们",
+     "py": "wǒmen",
+     "en": "we",
+     "ar": "",
+     "c": [
+      "我",
+      "们"
+     ]
+    },
+    {
+     "t": "你们",
+     "py": "nǐmen",
+     "en": "you (plural)",
+     "ar": "",
+     "c": [
+      "你",
+      "们"
+     ]
+    },
+    {
+     "t": "他们",
+     "py": "tāmen",
+     "en": "they (m.)",
+     "ar": "",
+     "c": [
+      "他",
+      "们"
+     ]
+    },
+    {
+     "t": "她们",
+     "py": "tāmen",
+     "en": "they (f.)",
+     "ar": "",
+     "c": [
+      "她",
+      "们"
+     ]
+    },
+    {
+     "t": "是",
+     "py": "shì",
+     "en": "to be; indeed, right, yes; okay",
+     "ar": "",
+     "c": [
+      "是"
+     ]
+    },
+    {
+     "t": "很",
+     "py": "hěn",
+     "en": "very, quite, much",
+     "ar": "",
+     "c": [
+      "很"
+     ]
+    },
+    {
+     "t": "在",
+     "py": "zài",
+     "en": "at, in, on; to exist; used to indicate the present progressive tense",
+     "ar": "",
+     "c": [
+      "在"
+     ]
+    },
+    {
+     "t": "的",
+     "py": "de",
+     "en": "aim, goal; of; possessive particle; -self suffix",
+     "ar": "",
+     "c": [
+      "的"
+     ]
+    },
+    {
+     "t": "不",
+     "py": "bù",
+     "en": "no, not, un-; negative prefix",
+     "ar": "",
+     "c": [
+      "不"
+     ]
+    },
+    {
+     "t": "什么",
+     "py": "shénme",
+     "en": "what",
+     "ar": "",
+     "c": [
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "谁",
+     "py": "shéi/shuí",
+     "en": "who? whom? whose? anyone?",
+     "ar": "",
+     "c": [
+      "谁"
+     ]
+    },
+    {
+     "t": "几",
+     "py": "jǐ",
+     "en": "small table; how many; a few, some",
+     "ar": "",
+     "c": [
+      "几"
+     ]
+    },
+    {
+     "t": "多少",
+     "py": "duōshǎo",
+     "en": "how many/much",
+     "ar": "",
+     "c": [
+      "多",
+      "少"
+     ]
+    },
+    {
+     "t": "怎么",
+     "py": "zěnme",
+     "en": "how",
+     "ar": "",
+     "c": [
+      "怎",
+      "么"
+     ]
+    },
+    {
+     "t": "怎么样",
+     "py": "zěnmeyàng",
+     "en": "how about; how is it",
+     "ar": "",
+     "c": [
+      "怎",
+      "么",
+      "样"
+     ]
+    },
+    {
+     "t": "哪",
+     "py": "nǎ",
+     "en": "which? where? how?",
+     "ar": "",
+     "c": [
+      "哪"
+     ]
+    },
+    {
+     "t": "哪里",
+     "py": "nǎlǐ",
+     "en": "where",
+     "ar": "",
+     "c": [
+      "哪",
+      "里"
+     ]
+    },
+    {
+     "t": "为什么",
+     "py": "wèishénme",
+     "en": "why",
+     "ar": "",
+     "c": [
+      "为",
+      "什",
+      "么"
+     ]
+    },
+    {
+     "t": "吗",
+     "py": "ma",
+     "en": "final interrogative particle",
+     "ar": "",
+     "c": [
+      "吗"
+     ]
+    },
+    {
+     "t": "呢",
+     "py": "ne",
+     "en": "wool; interrogative or emphatic final particle",
+     "ar": "",
+     "c": [
+      "呢"
+     ]
+    },
+    {
+     "t": "吧",
+     "py": "ba",
+     "en": "emphatic final particle",
+     "ar": "",
+     "c": [
+      "吧"
+     ]
+    },
+    {
+     "t": "这",
+     "py": "zhè",
+     "en": "this, these; such; here",
+     "ar": "",
+     "c": [
+      "这"
+     ]
+    },
+    {
+     "t": "那",
+     "py": "nà",
+     "en": "that, that one, those",
+     "ar": "",
+     "c": [
+      "那"
+     ]
+    },
+    {
+     "t": "有",
+     "py": "yǒu",
+     "en": "to have, to own, to possess; to exist",
+     "ar": "",
+     "c": [
+      "有"
+     ]
+    },
+    {
+     "t": "和",
+     "py": "hé",
+     "en": "harmony, peace; calm, peaceful",
+     "ar": "",
+     "c": [
+      "和"
+     ]
+    },
+    {
+     "t": "一",
+     "py": "yī",
+     "en": "one; a, an; alone",
+     "ar": "",
+     "c": [
+      "一"
+     ]
+    },
+    {
+     "t": "二",
+     "py": "èr",
+     "en": "two; twice",
+     "ar": "",
+     "c": [
+      "二"
+     ]
+    },
+    {
+     "t": "三",
+     "py": "sān",
+     "en": "three",
+     "ar": "",
+     "c": [
+      "三"
+     ]
+    },
+    {
+     "t": "四",
+     "py": "sì",
+     "en": "four",
+     "ar": "",
+     "c": [
+      "四"
+     ]
+    },
+    {
+     "t": "五",
+     "py": "wǔ",
+     "en": "five; surname",
+     "ar": "",
+     "c": [
+      "五"
+     ]
+    },
+    {
+     "t": "六",
+     "py": "liù",
+     "en": "six",
+     "ar": "",
+     "c": [
+      "六"
+     ]
+    },
+    {
+     "t": "七",
+     "py": "qī",
+     "en": "seven",
+     "ar": "",
+     "c": [
+      "七"
+     ]
+    },
+    {
+     "t": "八",
+     "py": "bā",
+     "en": "eight; all around, all sides",
+     "ar": "",
+     "c": [
+      "八"
+     ]
+    },
+    {
+     "t": "九",
+     "py": "jiǔ",
+     "en": "nine",
+     "ar": "",
+     "c": [
+      "九"
+     ]
+    },
+    {
+     "t": "十",
+     "py": "shí",
+     "en": "ten, tenth; complete; perfect",
+     "ar": "",
+     "c": [
+      "十"
+     ]
+    }
+   ],
+   "read": [
+    {
+     "t": "叫",
+     "py": "jiào",
+     "en": "cry, shout; to call, to greet, to hail",
+     "ar": "",
+     "c": [
+      "叫"
+     ]
+    },
+    {
+     "t": "岁",
+     "py": "suì",
+     "en": "year; years old, age; harvest",
+     "ar": "",
+     "c": [
+      "岁"
+     ]
+    },
+    {
+     "t": "年",
+     "py": "nián",
+     "en": "year; anniversary; a person's age",
+     "ar": "",
+     "c": [
+      "年"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "日",
+     "py": "rì",
+     "en": "sun; day; daytime",
+     "ar": "",
+     "c": [
+      "日"
+     ]
+    },
+    {
+     "t": "点",
+     "py": "diǎn",
+     "en": "dot, point, speck",
+     "ar": "",
+     "c": [
+      "点"
+     ]
+    },
+    {
+     "t": "半",
+     "py": "bàn",
+     "en": "half; semi-, incomplete",
+     "ar": "",
+     "c": [
+      "半"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "看",
+     "py": "kàn",
+     "en": "to look, to see; to examine, to scrutinize",
+     "ar": "",
+     "c": [
+      "看"
+     ]
+    },
+    {
+     "t": "听",
+     "py": "tīng",
+     "en": "to hear, to listen; to understand; to obey",
+     "ar": "",
+     "c": [
+      "听"
+     ]
+    },
+    {
+     "t": "说",
+     "py": "shuō",
+     "en": "to speak, to say; to scold, to upbraid",
+     "ar": "",
+     "c": [
+      "说"
+     ]
+    },
+    {
+     "t": "写",
+     "py": "xiě",
+     "en": "to write; to draw, to sketch; to compose",
+     "ar": "",
+     "c": [
+      "写"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "喝",
+     "py": "hē",
+     "en": "to drink; to shout, to call out",
+     "ar": "",
+     "c": [
+      "喝"
+     ]
+    },
+    {
+     "t": "唱",
+     "py": "chàng",
+     "en": "to sing, to chant, to call; ditty, song",
+     "ar": "",
+     "c": [
+      "唱"
+     ]
+    },
+    {
+     "t": "大",
+     "py": "dà",
+     "en": "big, great, vast, high, deep",
+     "ar": "",
+     "c": [
+      "大"
+     ]
+    },
+    {
+     "t": "小",
+     "py": "xiǎo",
+     "en": "small, tiny, insignificant",
+     "ar": "",
+     "c": [
+      "小"
+     ]
+    },
+    {
+     "t": "冷",
+     "py": "lěng",
+     "en": "cold, cool; lonely",
+     "ar": "",
+     "c": [
+      "冷"
+     ]
+    },
+    {
+     "t": "热",
+     "py": "rè",
+     "en": "heat, fever, zeal",
+     "ar": "",
+     "c": [
+      "热"
+     ]
+    },
+    {
+     "t": "春",
+     "py": "chūn",
+     "en": "springtime; joyful, lustful, wanton",
+     "ar": "",
+     "c": [
+      "春"
+     ]
+    },
+    {
+     "t": "夏",
+     "py": "xià",
+     "en": "summer; the Xia or Hsia dynasty",
+     "ar": "",
+     "c": [
+      "夏"
+     ]
+    },
+    {
+     "t": "秋",
+     "py": "qiū",
+     "en": "autumn, fall; year",
+     "ar": "",
+     "c": [
+      "秋"
+     ]
+    },
+    {
+     "t": "冬",
+     "py": "dōng",
+     "en": "winter, 11th lunar month",
+     "ar": "",
+     "c": [
+      "冬"
+     ]
+    },
+    {
+     "t": "也",
+     "py": "yě",
+     "en": "also, too",
+     "ar": "",
+     "c": [
+      "也"
+     ]
+    },
+    {
+     "t": "都",
+     "py": "dōu",
+     "en": "all, each, entirely, whole; metropolis; capital",
+     "ar": "",
+     "c": [
+      "都"
+     ]
+    },
+    {
+     "t": "水",
+     "py": "shuǐ",
+     "en": "water, liquid, lotion, juice",
+     "ar": "",
+     "c": [
+      "水"
+     ]
+    },
+    {
+     "t": "茶",
+     "py": "chá",
+     "en": "tea; tea leaves; tea plant",
+     "ar": "",
+     "c": [
+      "茶"
+     ]
+    },
+    {
+     "t": "忙",
+     "py": "máng",
+     "en": "busy, hurried, pressed for time",
+     "ar": "",
+     "c": [
+      "忙"
+     ]
+    },
+    {
+     "t": "想",
+     "py": "xiǎng",
+     "en": "to believe, to wish for; to consider, to plan, to think",
+     "ar": "",
+     "c": [
+      "想"
+     ]
+    },
+    {
+     "t": "累",
+     "py": "lèi",
+     "en": "tired; to accumulate; to involve; bother, nuisance",
+     "ar": "",
+     "c": [
+      "累"
+     ]
+    },
+    {
+     "t": "会",
+     "py": "huì",
+     "en": "to assemble, to meet; meeting; association, group",
+     "ar": "",
+     "c": [
+      "会"
+     ]
+    },
+    {
+     "t": "两",
+     "py": "liǎng",
+     "en": "two, both, pair, couple; ounce",
+     "ar": "",
+     "c": [
+      "两"
+     ]
+    },
+    {
+     "t": "杯",
+     "py": "bēi",
+     "en": "cup, glass; measure word for liquids",
+     "ar": "",
+     "c": [
+      "杯"
+     ]
+    },
+    {
+     "t": "笔",
+     "py": "bǐ",
+     "en": "pen, pencil, writing brush; to compose, to write; Hanzi stroke",
+     "ar": "",
+     "c": [
+      "笔"
+     ]
+    },
+    {
+     "t": "来",
+     "py": "lái",
+     "en": "to arrive, to come, to return; in the future, later on",
+     "ar": "",
+     "c": [
+      "来"
+     ]
+    },
+    {
+     "t": "去",
+     "py": "qù",
+     "en": "to go away, to leave, to depart",
+     "ar": "",
+     "c": [
+      "去"
+     ]
+    },
+    {
+     "t": "远",
+     "py": "yuǎn",
+     "en": "distant, remote, far; profound",
+     "ar": "",
+     "c": [
+      "远"
+     ]
+    },
+    {
+     "t": "近",
+     "py": "jìn",
+     "en": "to approach; near, close; intimate",
+     "ar": "",
+     "c": [
+      "近"
+     ]
+    },
+    {
+     "t": "快",
+     "py": "kuài",
+     "en": "speedy, rapid, quick; soon",
+     "ar": "",
+     "c": [
+      "快"
+     ]
+    },
+    {
+     "t": "慢",
+     "py": "màn",
+     "en": "slowly, leisurely; sluggish",
+     "ar": "",
+     "c": [
+      "慢"
+     ]
+    },
+    {
+     "t": "钱",
+     "py": "qián",
+     "en": "money, currency, coins",
+     "ar": "",
+     "c": [
+      "钱"
+     ]
+    },
+    {
+     "t": "元",
+     "py": "yuán",
+     "en": "first; dollar; origin; head",
+     "ar": "",
+     "c": [
+      "元"
+     ]
+    },
+    {
+     "t": "坐",
+     "py": "zuò",
+     "en": "seat; to sit; to ride, to travel by",
+     "ar": "",
+     "c": [
+      "坐"
+     ]
+    },
+    {
+     "t": "开",
+     "py": "kāi",
+     "en": "to open; to start, to initiate, to begin",
+     "ar": "",
+     "c": [
+      "开"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "要",
+     "py": "yào",
+     "en": "essential, necessary; to ask for; to coerce; to demand",
+     "ar": "",
+     "c": [
+      "要"
+     ]
+    },
+    {
+     "t": "请",
+     "py": "qǐng",
+     "en": "to ask, to request; to invite; please",
+     "ar": "",
+     "c": [
+      "请"
+     ]
+    },
+    {
+     "t": "前",
+     "py": "qián",
+     "en": "in front, forward; former, preceding",
+     "ar": "",
+     "c": [
+      "前"
+     ]
+    },
+    {
+     "t": "后",
+     "py": "hòu",
+     "en": "after; behind, rear; descendants",
+     "ar": "",
+     "c": [
+      "后"
+     ]
+    },
+    {
+     "t": "里",
+     "py": "lǐ",
+     "en": "unit of distance equal to 0.5km; village; lane",
+     "ar": "",
+     "c": [
+      "里"
+     ]
+    },
+    {
+     "t": "外",
+     "py": "wài",
+     "en": "out, outside, external; foreign; in addition",
+     "ar": "",
+     "c": [
+      "外"
+     ]
+    },
+    {
+     "t": "比",
+     "py": "bǐ",
+     "en": "to compare, liken; comparison; than",
+     "ar": "",
+     "c": [
+      "比"
+     ]
+    },
+    {
+     "t": "过",
+     "py": "guò",
+     "en": "pass; to go across, to pass through",
+     "ar": "",
+     "c": [
+      "过"
+     ]
+    },
+    {
+     "t": "猫",
+     "py": "māo",
+     "en": "cat",
+     "ar": "",
+     "c": [
+      "猫"
+     ]
+    },
+    {
+     "t": "狗",
+     "py": "gǒu",
+     "en": "dog",
+     "ar": "",
+     "c": [
+      "狗"
+     ]
+    },
+    {
+     "t": "穿",
+     "py": "chuān",
+     "en": "to drill, to pierce; to dress, to wear",
+     "ar": "",
+     "c": [
+      "穿"
+     ]
+    },
+    {
+     "t": "跟",
+     "py": "gēn",
+     "en": "heel; to accompany, to follow; with",
+     "ar": "",
+     "c": [
+      "跟"
+     ]
+    },
+    {
+     "t": "长",
+     "py": "cháng",
+     "en": "long, lasting; to excel in",
+     "ar": "",
+     "c": [
+      "长"
+     ]
+    },
+    {
+     "t": "短",
+     "py": "duǎn",
+     "en": "brief, short; deficient, lacking",
+     "ar": "",
+     "c": [
+      "短"
+     ]
+    },
+    {
+     "t": "只",
+     "py": "zhī",
+     "en": "only, merely, just",
+     "ar": "",
+     "c": [
+      "只"
+     ]
+    },
+    {
+     "t": "条",
+     "py": "tiáo",
+     "en": "clause, condition; string, stripe",
+     "ar": "",
+     "c": [
+      "条"
+     ]
+    },
+    {
+     "t": "最",
+     "py": "zuì",
+     "en": "most, extremely, exceedingly; superlative",
+     "ar": "",
+     "c": [
+      "最"
+     ]
+    },
+    {
+     "t": "米",
+     "py": "mǐ",
+     "en": "rice, millet, grain",
+     "ar": "",
+     "c": [
+      "米"
+     ]
+    },
+    {
+     "t": "从",
+     "py": "cóng",
+     "en": "from, by, since, whence, through",
+     "ar": "",
+     "c": [
+      "从"
+     ]
+    },
+    {
+     "t": "帮",
+     "py": "bāng",
+     "en": "to help, to assist; to support, to defend; party; gang",
+     "ar": "",
+     "c": [
+      "帮"
+     ]
+    },
+    {
+     "t": "贵",
+     "py": "guì",
+     "en": "expensive, costly; valuable, precious",
+     "ar": "",
+     "c": [
+      "贵"
+     ]
+    },
+    {
+     "t": "用",
+     "py": "yòng",
+     "en": "to use, to employ, to apply; use",
+     "ar": "",
+     "c": [
+      "用"
+     ]
+    },
+    {
+     "t": "问",
+     "py": "wèn",
+     "en": "to ask about, to inquire after",
+     "ar": "",
+     "c": [
+      "问"
+     ]
+    },
+    {
+     "t": "左",
+     "py": "zuǒ",
+     "en": "left; unorthodox, improper",
+     "ar": "",
+     "c": [
+      "左"
+     ]
+    },
+    {
+     "t": "右",
+     "py": "yòu",
+     "en": "right; right-wing",
+     "ar": "",
+     "c": [
+      "右"
+     ]
+    },
+    {
+     "t": "走",
+     "py": "zǒu",
+     "en": "to walk, to run, to flee",
+     "ar": "",
+     "c": [
+      "走"
+     ]
+    },
+    {
+     "t": "鱼",
+     "py": "yú",
+     "en": "fish",
+     "ar": "",
+     "c": [
+      "鱼"
+     ]
+    },
+    {
+     "t": "药",
+     "py": "yào",
+     "en": "drugs, medicine; the leaf of the Dahurian angelica plant",
+     "ar": "",
+     "c": [
+      "药"
+     ]
+    },
+    {
+     "t": "洗",
+     "py": "xǐ",
+     "en": "to bathe, to rinse, to wash",
+     "ar": "",
+     "c": [
+      "洗"
+     ]
+    },
+    {
+     "t": "网",
+     "py": "wǎng",
+     "en": "net; network",
+     "ar": "",
+     "c": [
+      "网"
+     ]
+    },
+    {
+     "t": "头",
+     "py": "tóu",
+     "en": "head; chief, boss; first, top",
+     "ar": "",
+     "c": [
+      "头"
+     ]
+    },
+    {
+     "t": "肉",
+     "py": "ròu",
+     "en": "meat; flesh",
+     "ar": "",
+     "c": [
+      "肉"
+     ]
+    },
+    {
+     "t": "票",
+     "py": "piào",
+     "en": "bank note; ticket; vote; a slip of paper",
+     "ar": "",
+     "c": [
+      "票"
+     ]
+    },
+    {
+     "t": "门",
+     "py": "mén",
+     "en": "gate, door, entrance, opening",
+     "ar": "",
+     "c": [
+      "门"
+     ]
+    },
+    {
+     "t": "玩",
+     "py": "wán",
+     "en": "to play with, to joke, to entertain",
+     "ar": "",
+     "c": [
+      "玩"
+     ]
+    },
+    {
+     "t": "你好",
+     "py": "nǐhǎo",
+     "en": "hello",
+     "ar": "",
+     "c": [
+      "你",
+      "好"
+     ]
+    },
+    {
+     "t": "再见",
+     "py": "zàijiàn",
+     "en": "goodbye",
+     "ar": "",
+     "c": [
+      "再",
+      "见"
+     ]
+    },
+    {
+     "t": "谢谢",
+     "py": "xièxie",
+     "en": "thank you",
+     "ar": "",
+     "c": [
+      "谢",
+      "谢"
+     ]
+    },
+    {
+     "t": "老师",
+     "py": "lǎoshī",
+     "en": "teacher",
+     "ar": "",
+     "c": [
+      "老",
+      "师"
+     ]
+    },
+    {
+     "t": "名字",
+     "py": "míngzi",
+     "en": "name",
+     "ar": "",
+     "c": [
+      "名",
+      "字"
+     ]
+    },
+    {
+     "t": "认识",
+     "py": "rènshi",
+     "en": "to know (sb.)",
+     "ar": "",
+     "c": [
+      "认",
+      "识"
+     ]
+    },
+    {
+     "t": "高兴",
+     "py": "gāoxìng",
+     "en": "happy; glad",
+     "ar": "",
+     "c": [
+      "高",
+      "兴"
+     ]
+    },
+    {
+     "t": "中国",
+     "py": "Zhōngguó",
+     "en": "China",
+     "ar": "",
+     "c": [
+      "中",
+      "国"
+     ]
+    },
+    {
+     "t": "阿联酋",
+     "py": "Āliánqiú",
+     "en": "the UAE",
+     "ar": "",
+     "c": [
+      "阿",
+      "联",
+      "酋"
+     ]
+    },
+    {
+     "t": "中文",
+     "py": "Zhōngwén",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "中",
+      "文"
+     ]
+    },
+    {
+     "t": "国家",
+     "py": "guójiā",
+     "en": "country",
+     "ar": "",
+     "c": [
+      "国",
+      "家"
+     ]
+    },
+    {
+     "t": "汉语",
+     "py": "Hànyǔ",
+     "en": "Chinese (language)",
+     "ar": "",
+     "c": [
+      "汉",
+      "语"
+     ]
+    },
+    {
+     "t": "晴天",
+     "py": "qíngtiān",
+     "en": "sunny day",
+     "ar": "",
+     "c": [
+      "晴",
+      "天"
+     ]
+    },
+    {
+     "t": "下雨",
+     "py": "xiàyǔ",
+     "en": "to rain",
+     "ar": "",
+     "c": [
+      "下",
+      "雨"
+     ]
+    },
+    {
+     "t": "下雪",
+     "py": "xiàxuě",
+     "en": "to snow",
+     "ar": "",
+     "c": [
+      "下",
+      "雪"
+     ]
+    },
+    {
+     "t": "星期",
+     "py": "xīngqī",
+     "en": "week",
+     "ar": "",
+     "c": [
+      "星",
+      "期"
+     ]
+    },
+    {
+     "t": "今天",
+     "py": "jīntiān",
+     "en": "today",
+     "ar": "",
+     "c": [
+      "今",
+      "天"
+     ]
+    },
+    {
+     "t": "上课",
+     "py": "shàngkè",
+     "en": "attend class",
+     "ar": "",
+     "c": [
+      "上",
+      "课"
+     ]
+    },
+    {
+     "t": "上学",
+     "py": "shàngxué",
+     "en": "go to school",
+     "ar": "",
+     "c": [
+      "上",
+      "学"
+     ]
+    },
+    {
+     "t": "回家",
+     "py": "huíjiā",
+     "en": "go home",
+     "ar": "",
+     "c": [
+      "回",
+      "家"
+     ]
+    },
+    {
+     "t": "爸爸",
+     "py": "bàba",
+     "en": "dad",
+     "ar": "",
+     "c": [
+      "爸",
+      "爸"
+     ]
+    },
+    {
+     "t": "妈妈",
+     "py": "māma",
+     "en": "mom",
+     "ar": "",
+     "c": [
+      "妈",
+      "妈"
+     ]
+    },
+    {
+     "t": "爷爷",
+     "py": "yéye",
+     "en": "grandpa",
+     "ar": "",
+     "c": [
+      "爷",
+      "爷"
+     ]
+    },
+    {
+     "t": "奶奶",
+     "py": "nǎinai",
+     "en": "grandma",
+     "ar": "",
+     "c": [
+      "奶",
+      "奶"
+     ]
+    },
+    {
+     "t": "哥哥",
+     "py": "gēge",
+     "en": "older brother",
+     "ar": "",
+     "c": [
+      "哥",
+      "哥"
+     ]
+    },
+    {
+     "t": "姐姐",
+     "py": "jiějie",
+     "en": "older sister",
+     "ar": "",
+     "c": [
+      "姐",
+      "姐"
+     ]
+    },
+    {
+     "t": "妹妹",
+     "py": "mèimei",
+     "en": "younger sister",
+     "ar": "",
+     "c": [
+      "妹",
+      "妹"
+     ]
+    },
+    {
+     "t": "现在",
+     "py": "xiànzài",
+     "en": "now",
+     "ar": "",
+     "c": [
+      "现",
+      "在"
+     ]
+    },
+    {
+     "t": "上午",
+     "py": "shàngwǔ",
+     "en": "morning (forenoon)",
+     "ar": "",
+     "c": [
+      "上",
+      "午"
+     ]
+    },
+    {
+     "t": "中午",
+     "py": "zhōngwǔ",
+     "en": "noon",
+     "ar": "",
+     "c": [
+      "中",
+      "午"
+     ]
+    },
+    {
+     "t": "下午",
+     "py": "xiàwǔ",
+     "en": "afternoon",
+     "ar": "",
+     "c": [
+      "下",
+      "午"
+     ]
+    },
+    {
+     "t": "晚上",
+     "py": "wǎnshang",
+     "en": "evening",
+     "ar": "",
+     "c": [
+      "晚",
+      "上"
+     ]
+    },
+    {
+     "t": "学生",
+     "py": "xuésheng",
+     "en": "student",
+     "ar": "",
+     "c": [
+      "学",
+      "生"
+     ]
+    },
+    {
+     "t": "学习",
+     "py": "xuéxí",
+     "en": "to study",
+     "ar": "",
+     "c": [
+      "学",
+      "习"
+     ]
+    },
+    {
+     "t": "学校",
+     "py": "xuéxiào",
+     "en": "school",
+     "ar": "",
+     "c": [
+      "学",
+      "校"
+     ]
+    },
+    {
+     "t": "工作",
+     "py": "gōngzuò",
+     "en": "work; job",
+     "ar": "",
+     "c": [
+      "工",
+      "作"
+     ]
+    },
+    {
+     "t": "起床",
+     "py": "qǐchuáng",
+     "en": "get up",
+     "ar": "",
+     "c": [
+      "起",
+      "床"
+     ]
+    },
+    {
+     "t": "睡觉",
+     "py": "shuìjiào",
+     "en": "to sleep",
+     "ar": "",
+     "c": [
+      "睡",
+      "觉"
+     ]
+    },
+    {
+     "t": "喜欢",
+     "py": "xǐhuan",
+     "en": "to like",
+     "ar": "",
+     "c": [
+      "喜",
+      "欢"
+     ]
+    },
+    {
+     "t": "每天",
+     "py": "měitiān",
+     "en": "every day",
+     "ar": "",
+     "c": [
+      "每",
+      "天"
+     ]
+    },
+    {
+     "t": "熊猫",
+     "py": "xióngmāo",
+     "en": "panda",
+     "ar": "",
+     "c": [
+      "熊",
+      "猫"
+     ]
+    },
+    {
+     "t": "音乐",
+     "py": "yīnyuè",
+     "en": "music",
+     "ar": "",
+     "c": [
+      "音",
+      "乐"
+     ]
+    },
+    {
+     "t": "朋友",
+     "py": "péngyou",
+     "en": "friend",
+     "ar": "",
+     "c": [
+      "朋",
+      "友"
+     ]
+    },
+    {
+     "t": "生日",
+     "py": "shēngrì",
+     "en": "birthday",
+     "ar": "",
+     "c": [
+      "生",
+      "日"
+     ]
+    },
+    {
+     "t": "快乐",
+     "py": "kuàilè",
+     "en": "happy",
+     "ar": "",
+     "c": [
+      "快",
+      "乐"
+     ]
+    },
+    {
+     "t": "礼物",
+     "py": "lǐwù",
+     "en": "gift",
+     "ar": "",
+     "c": [
+      "礼",
+      "物"
+     ]
+    },
+    {
+     "t": "爱好",
+     "py": "àihào",
+     "en": "hobby",
+     "ar": "",
+     "c": [
+      "爱",
+      "好"
+     ]
+    },
+    {
+     "t": "咖啡",
+     "py": "kāfēi",
+     "en": "coffee",
+     "ar": "",
+     "c": [
+      "咖",
+      "啡"
+     ]
+    },
+    {
+     "t": "果汁",
+     "py": "guǒzhī",
+     "en": "juice",
+     "ar": "",
+     "c": [
+      "果",
+      "汁"
+     ]
+    },
+    {
+     "t": "鸡蛋",
+     "py": "jīdàn",
+     "en": "egg",
+     "ar": "",
+     "c": [
+      "鸡",
+      "蛋"
+     ]
+    },
+    {
+     "t": "面包",
+     "py": "miànbāo",
+     "en": "bread",
+     "ar": "",
+     "c": [
+      "面",
+      "包"
+     ]
+    },
+    {
+     "t": "沙拉",
+     "py": "shālā",
+     "en": "salad",
+     "ar": "",
+     "c": [
+      "沙",
+      "拉"
+     ]
+    },
+    {
+     "t": "手机",
+     "py": "shǒujī",
+     "en": "mobile phone",
+     "ar": "",
+     "c": [
+      "手",
+      "机"
+     ]
+    },
+    {
+     "t": "书包",
+     "py": "shūbāo",
+     "en": "schoolbag",
+     "ar": "",
+     "c": [
+      "书",
+      "包"
+     ]
+    },
+    {
+     "t": "本子",
+     "py": "běnzi",
+     "en": "notebook",
+     "ar": "",
+     "c": [
+      "本",
+      "子"
+     ]
+    },
+    {
+     "t": "一起",
+     "py": "yìqǐ",
+     "en": "together",
+     "ar": "",
+     "c": [
+      "一",
+      "起"
+     ]
+    },
+    {
+     "t": "同学",
+     "py": "tóngxué",
+     "en": "classmate",
+     "ar": "",
+     "c": [
+      "同",
+      "学"
+     ]
+    },
+    {
+     "t": "头巾",
+     "py": "tóujīn",
+     "en": "headscarf",
+     "ar": "",
+     "c": [
+      "头",
+      "巾"
+     ]
+    },
+    {
+     "t": "飞机",
+     "py": "fēijī",
+     "en": "airplane",
+     "ar": "",
+     "c": [
+      "飞",
+      "机"
+     ]
+    },
+    {
+     "t": "出租车",
+     "py": "chūzūchē",
+     "en": "taxi",
+     "ar": "",
+     "c": [
+      "出",
+      "租",
+      "车"
+     ]
+    },
+    {
+     "t": "网球",
+     "py": "wǎngqiú",
+     "en": "tennis",
+     "ar": "",
+     "c": [
+      "网",
+      "球"
+     ]
+    },
+    {
+     "t": "游泳",
+     "py": "yóuyǒng",
+     "en": "to swim",
+     "ar": "",
+     "c": [
+      "游",
+      "泳"
+     ]
+    },
+    {
+     "t": "不错",
+     "py": "búcuò",
+     "en": "not bad; pretty good",
+     "ar": "",
+     "c": [
+      "不",
+      "错"
+     ]
+    },
+    {
+     "t": "校车",
+     "py": "xiàochē",
+     "en": "school bus",
+     "ar": "",
+     "c": [
+      "校",
+      "车"
+     ]
+    },
+    {
+     "t": "地铁",
+     "py": "dìtiě",
+     "en": "subway",
+     "ar": "",
+     "c": [
+      "地",
+      "铁"
+     ]
+    },
+    {
+     "t": "有名",
+     "py": "yǒumíng",
+     "en": "famous",
+     "ar": "",
+     "c": [
+      "有",
+      "名"
+     ]
+    },
+    {
+     "t": "欢迎",
+     "py": "huānyíng",
+     "en": "welcome",
+     "ar": "",
+     "c": [
+      "欢",
+      "迎"
+     ]
+    },
+    {
+     "t": "足球",
+     "py": "zúqiú",
+     "en": "soccer",
+     "ar": "",
+     "c": [
+      "足",
+      "球"
+     ]
+    },
+    {
+     "t": "运动",
+     "py": "yùndòng",
+     "en": "sports; exercise",
+     "ar": "",
+     "c": [
+      "运",
+      "动"
+     ]
+    },
+    {
+     "t": "颜色",
+     "py": "yánsè",
+     "en": "color",
+     "ar": "",
+     "c": [
+      "颜",
+      "色"
+     ]
+    },
+    {
+     "t": "电脑",
+     "py": "diànnǎo",
+     "en": "computer",
+     "ar": "",
+     "c": [
+      "电",
+      "脑"
+     ]
+    },
+    {
+     "t": "超市",
+     "py": "chāoshì",
+     "en": "supermarket",
+     "ar": "",
+     "c": [
+      "超",
+      "市"
+     ]
+    },
+    {
+     "t": "房间",
+     "py": "fángjiān",
+     "en": "room",
+     "ar": "",
+     "c": [
+      "房",
+      "间"
+     ]
+    },
+    {
+     "t": "便宜",
+     "py": "piányi",
+     "en": "cheap",
+     "ar": "",
+     "c": [
+      "便",
+      "宜"
+     ]
+    },
+    {
+     "t": "时间",
+     "py": "shíjiān",
+     "en": "time",
+     "ar": "",
+     "c": [
+      "时",
+      "间"
+     ]
+    },
+    {
+     "t": "休息",
+     "py": "xiūxi",
+     "en": "to rest",
+     "ar": "",
+     "c": [
+      "休",
+      "息"
+     ]
+    },
+    {
+     "t": "医院",
+     "py": "yīyuàn",
+     "en": "hospital",
+     "ar": "",
+     "c": [
+      "医",
+      "院"
+     ]
+    },
+    {
+     "t": "机场",
+     "py": "jīchǎng",
+     "en": "airport",
+     "ar": "",
+     "c": [
+      "机",
+      "场"
+     ]
+    },
+    {
+     "t": "牛奶",
+     "py": "niúnǎi",
+     "en": "milk",
+     "ar": "",
+     "c": [
+      "牛",
+      "奶"
+     ]
+    },
+    {
+     "t": "桌子",
+     "py": "zhuōzi",
+     "en": "table; desk",
+     "ar": "",
+     "c": [
+      "桌",
+      "子"
+     ]
+    }
+   ],
+   "write": [
+    {
+     "t": "我",
+     "py": "wǒ",
+     "en": "I, me, my; our, us",
+     "ar": "",
+     "c": [
+      "我"
+     ]
+    },
+    {
+     "t": "年",
+     "py": "nián",
+     "en": "year; anniversary; a person's age",
+     "ar": "",
+     "c": [
+      "年"
+     ]
+    },
+    {
+     "t": "月",
+     "py": "yuè",
+     "en": "moon; month",
+     "ar": "",
+     "c": [
+      "月"
+     ]
+    },
+    {
+     "t": "日",
+     "py": "rì",
+     "en": "sun; day; daytime",
+     "ar": "",
+     "c": [
+      "日"
+     ]
+    },
+    {
+     "t": "爱",
+     "py": "ài",
+     "en": "to love, to like, to be fond of; love, affection",
+     "ar": "",
+     "c": [
+      "爱"
+     ]
+    },
+    {
+     "t": "看",
+     "py": "kàn",
+     "en": "to look, to see; to examine, to scrutinize",
+     "ar": "",
+     "c": [
+      "看"
+     ]
+    },
+    {
+     "t": "吃",
+     "py": "chī",
+     "en": "to eat; to drink; to suffer, to endure, to bear",
+     "ar": "",
+     "c": [
+      "吃"
+     ]
+    },
+    {
+     "t": "唱",
+     "py": "chàng",
+     "en": "to sing, to chant, to call; ditty, song",
+     "ar": "",
+     "c": [
+      "唱"
+     ]
+    },
+    {
+     "t": "冬",
+     "py": "dōng",
+     "en": "winter, 11th lunar month",
+     "ar": "",
+     "c": [
+      "冬"
+     ]
+    },
+    {
+     "t": "茶",
+     "py": "chá",
+     "en": "tea; tea leaves; tea plant",
+     "ar": "",
+     "c": [
+      "茶"
+     ]
+    },
+    {
+     "t": "条",
+     "py": "tiáo",
+     "en": "clause, condition; string, stripe",
+     "ar": "",
+     "c": [
+      "条"
+     ]
+    },
+    {
+     "t": "忙",
+     "py": "máng",
+     "en": "busy, hurried, pressed for time",
+     "ar": "",
+     "c": [
+      "忙"
+     ]
+    },
+    {
+     "t": "想",
+     "py": "xiǎng",
+     "en": "to believe, to wish for; to consider, to plan, to think",
+     "ar": "",
+     "c": [
+      "想"
+     ]
+    },
+    {
+     "t": "半",
+     "py": "bàn",
+     "en": "half; semi-, incomplete",
+     "ar": "",
+     "c": [
+      "半"
+     ]
+    },
+    {
+     "t": "热",
+     "py": "rè",
+     "en": "heat, fever, zeal",
+     "ar": "",
+     "c": [
+      "热"
+     ]
+    },
+    {
+     "t": "远",
+     "py": "yuǎn",
+     "en": "distant, remote, far; profound",
+     "ar": "",
+     "c": [
+      "远"
+     ]
+    },
+    {
+     "t": "来",
+     "py": "lái",
+     "en": "to arrive, to come, to return; in the future, later on",
+     "ar": "",
+     "c": [
+      "来"
+     ]
+    },
+    {
+     "t": "肉",
+     "py": "ròu",
+     "en": "meat; flesh",
+     "ar": "",
+     "c": [
+      "肉"
+     ]
+    },
+    {
+     "t": "最",
+     "py": "zuì",
+     "en": "most, extremely, exceedingly; superlative",
+     "ar": "",
+     "c": [
+      "最"
+     ]
+    },
+    {
+     "t": "笔",
+     "py": "bǐ",
+     "en": "pen, pencil, writing brush; to compose, to write; Hanzi stroke",
+     "ar": "",
+     "c": [
+      "笔"
+     ]
+    },
+    {
+     "t": "杯",
+     "py": "bēi",
+     "en": "cup, glass; measure word for liquids",
+     "ar": "",
+     "c": [
+      "杯"
+     ]
+    },
+    {
+     "t": "帮",
+     "py": "bāng",
+     "en": "to help, to assist; to support, to defend; party; gang",
+     "ar": "",
+     "c": [
+      "帮"
+     ]
+    },
+    {
+     "t": "坐",
+     "py": "zuò",
+     "en": "seat; to sit; to ride, to travel by",
+     "ar": "",
+     "c": [
+      "坐"
+     ]
+    },
+    {
+     "t": "百",
+     "py": "bǎi",
+     "en": "one hundred; numerous, many",
+     "ar": "",
+     "c": [
+      "百"
+     ]
+    },
+    {
+     "t": "请",
+     "py": "qǐng",
+     "en": "to ask, to request; to invite; please",
+     "ar": "",
+     "c": [
+      "请"
+     ]
+    },
+    {
+     "t": "问",
+     "py": "wèn",
+     "en": "to ask about, to inquire after",
+     "ar": "",
+     "c": [
+      "问"
+     ]
+    },
+    {
+     "t": "左",
+     "py": "zuǒ",
+     "en": "left; unorthodox, improper",
+     "ar": "",
+     "c": [
+      "左"
+     ]
+    },
+    {
+     "t": "右",
+     "py": "yòu",
+     "en": "right; right-wing",
+     "ar": "",
+     "c": [
+      "右"
+     ]
+    },
+    {
+     "t": "走",
+     "py": "zǒu",
+     "en": "to walk, to run, to flee",
+     "ar": "",
+     "c": [
+      "走"
+     ]
+    },
+    {
+     "t": "贵",
+     "py": "guì",
+     "en": "expensive, costly; valuable, precious",
+     "ar": "",
+     "c": [
+      "贵"
+     ]
+    },
+    {
+     "t": "再见",
+     "py": "zàijiàn",
+     "en": "goodbye",
+     "ar": "",
+     "c": [
+      "再",
+      "见"
+     ]
+    },
+    {
+     "t": "下雨",
+     "py": "xiàyǔ",
+     "en": "to rain",
+     "ar": "",
+     "c": [
+      "下",
+      "雨"
+     ]
+    },
+    {
+     "t": "学习",
+     "py": "xuéxí",
+     "en": "to study",
+     "ar": "",
+     "c": [
+      "学",
+      "习"
+     ]
+    },
+    {
+     "t": "校车",
+     "py": "xiàochē",
+     "en": "school bus",
+     "ar": "",
+     "c": [
+      "校",
+      "车"
+     ]
+    },
+    {
+     "t": "喜欢",
+     "py": "xǐhuan",
+     "en": "to like",
+     "ar": "",
+     "c": [
+      "喜",
+      "欢"
+     ]
+    },
+    {
+     "t": "晴天",
+     "py": "qíngtiān",
+     "en": "sunny day",
+     "ar": "",
+     "c": [
+      "晴",
+      "天"
+     ]
+    },
+    {
+     "t": "朋友",
+     "py": "péngyou",
+     "en": "friend",
+     "ar": "",
+     "c": [
+      "朋",
+      "友"
+     ]
+    },
+    {
+     "t": "手机",
+     "py": "shǒujī",
+     "en": "mobile phone",
+     "ar": "",
+     "c": [
+      "手",
+      "机"
+     ]
+    },
+    {
+     "t": "音乐",
+     "py": "yīnyuè",
+     "en": "music",
+     "ar": "",
+     "c": [
+      "音",
+      "乐"
+     ]
+    },
+    {
+     "t": "国家",
+     "py": "guójiā",
+     "en": "country",
+     "ar": "",
+     "c": [
+      "国",
+      "家"
+     ]
+    },
+    {
+     "t": "起床",
+     "py": "qǐchuáng",
+     "en": "get up",
+     "ar": "",
+     "c": [
+      "起",
+      "床"
+     ]
+    },
+    {
+     "t": "快乐",
+     "py": "kuàilè",
+     "en": "happy",
+     "ar": "",
+     "c": [
+      "快",
+      "乐"
+     ]
+    },
+    {
+     "t": "牛奶",
+     "py": "niúnǎi",
+     "en": "milk",
+     "ar": "",
+     "c": [
+      "牛",
+      "奶"
+     ]
+    },
+    {
+     "t": "足球",
+     "py": "zúqiú",
+     "en": "soccer",
+     "ar": "",
+     "c": [
+      "足",
+      "球"
+     ]
+    },
+    {
+     "t": "果汁",
+     "py": "guǒzhī",
+     "en": "juice",
+     "ar": "",
+     "c": [
+      "果",
+      "汁"
+     ]
+    },
+    {
+     "t": "中午",
+     "py": "zhōngwǔ",
+     "en": "noon",
+     "ar": "",
+     "c": [
+      "中",
+      "午"
+     ]
+    },
+    {
+     "t": "电脑",
+     "py": "diànnǎo",
+     "en": "computer",
+     "ar": "",
+     "c": [
+      "电",
+      "脑"
+     ]
+    },
+    {
+     "t": "房间",
+     "py": "fángjiān",
+     "en": "room",
+     "ar": "",
+     "c": [
+      "房",
+      "间"
+     ]
+    },
+    {
+     "t": "休息",
+     "py": "xiūxi",
+     "en": "to rest",
+     "ar": "",
+     "c": [
+      "休",
+      "息"
+     ]
+    },
+    {
+     "t": "桌子",
+     "py": "zhuōzi",
+     "en": "table; desk",
+     "ar": "",
+     "c": [
+      "桌",
+      "子"
+     ]
+    }
+   ]
+  }
+ }
+}
