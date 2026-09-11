@@ -42,7 +42,3 @@ python build.py
 
 - 字词：2026 汉字大赛官方字词总表
 - 笔顺：[Make Me a Hanzi](https://github.com/skishore/makemeahanzi) / [HanziWriter](https://hanziwriter.org)
-
----
-
-Designed by **Dr. Zhou Fang** · dr.zhou.fang@gmail.com
