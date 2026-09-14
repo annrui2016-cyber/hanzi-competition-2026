@@ -177,11 +177,14 @@ function tonel(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]
 
 const $=s=>document.querySelector(s);
 function show(id){['home','cycle','category','study'].forEach(s=>$('#'+s).classList.add('hide'));$('#'+id).classList.remove('hide');}
-function isDone(cid,cat,term){return !!(prog.done[cid]&&prog.done[cid][cat]&&prog.done[cid][cat][term]);}
-function markDone(cid,cat,term){prog.done[cid]=prog.done[cid]||{};prog.done[cid][cat]=prog.done[cid][cat]||{};prog.done[cid][cat][term]=1;save();}
-function doneCount(cid,cat){const items=DATA.cycles[cid][cat];return items.filter(e=>isDone(cid,cat,e.t)).length;}
-function cycleTotal(cid){return CATS.reduce((n,c)=>n+DATA.cycles[cid][c[0]].length,0);}
-function cycleDone(cid){return CATS.reduce((n,c)=>n+doneCount(cid,c[0]),0);}
+/* progress keys: base / read / write(手写) / write_type(电打) — 书写字词按两种能力分开统计 */
+function wkey(cat){return (cat==='write'&&writeMode==='type')?'write_type':cat;}
+function listKey(pk){return pk==='write_type'?'write':pk;}
+function isDone(cid,pk,term){return !!(prog.done[cid]&&prog.done[cid][pk]&&prog.done[cid][pk][term]);}
+function markDone(cid,pk,term){prog.done[cid]=prog.done[cid]||{};prog.done[cid][pk]=prog.done[cid][pk]||{};prog.done[cid][pk][term]=1;save();}
+function doneCount(cid,pk){const items=DATA.cycles[cid][listKey(pk)];return items.filter(e=>isDone(cid,pk,e.t)).length;}
+function cycleTotal(cid){const c=DATA.cycles[cid];return c.base.length+c.read.length+c.write.length*2;}
+function cycleDone(cid){return doneCount(cid,'base')+doneCount(cid,'read')+doneCount(cid,'write')+doneCount(cid,'write_type');}
 
 /* ---------- speech + sfx ---------- */
 function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
@@ -216,14 +219,23 @@ function openCycle(cid){
   $('#cycleMeta').textContent='Cycle '+cid+' · '+CYNAME[cid][0]+' · '+CYNAME[cid][1];
   const box=$('#catCards');box.innerHTML='';
   CATS.forEach(([cat,zh,en,ico])=>{
-    const items=DATA.cycles[cid][cat],t=items.length,d=doneCount(cid,cat);
+    const t=DATA.cycles[cid][cat].length;
     const el=document.createElement('div');el.className='bigcard';
-    const tag=cat==='write'?'（听写·需书写）':'（发音·意思·练习）';
+    let tag,progHtml,miniHtml;
+    if(cat==='write'){
+      const dh=doneCount(cid,'write'),dt=doneCount(cid,'write_type');
+      tag='（听写 · 手写 + 电打）';
+      progHtml='<div class="prog"><i style="width:'+(t?Math.round((dh+dt)/(2*t)*100):0)+'%"></i></div>';
+      miniHtml='<div class="mini">✍️ '+dh+'/'+t+'<br>⌨️ '+dt+'/'+t+'<div class="arrow">›</div></div>';
+    }else{
+      const d=doneCount(cid,cat);
+      tag='（发音 · 意思 · 练习）';
+      progHtml='<div class="prog"><i style="width:'+(t?Math.round(d/t*100):0)+'%"></i></div>';
+      miniHtml='<div class="mini">'+d+'/'+t+'<div class="arrow">›</div></div>';
+    }
     el.innerHTML='<div class="ico">'+ico+'</div>'
       +'<div><div class="t1">'+zh+' <span class="en" style="font-size:14px">'+en+'</span></div>'
-      +'<div class="t2">'+t+' 字词 '+tag+'</div>'
-      +'<div class="prog"><i style="width:'+(t?Math.round(d/t*100):0)+'%"></i></div></div>'
-      +'<div class="mini">'+d+'/'+t+'<div class="arrow">›</div></div>';
+      +'<div class="t2">'+t+' 字词 '+tag+'</div>'+progHtml+'</div>'+miniHtml;
     el.onclick=()=>openCategory(cid,cat);box.appendChild(el);
   });
 }
@@ -241,16 +253,18 @@ function openCategory(cid,cat){
       +'<button class="mbtn'+(writeMode==='type'?' on':'')+'" data-m="type">⌨️ 电打 Type</button>';
     wm.querySelectorAll('.mbtn').forEach(b=>b.onclick=()=>{writeMode=b.dataset.m;prog.writeMode=writeMode;save();openCategory(cid,cat);});
   } else wm.classList.add('hide');
-  const d=doneCount(cid,cat),t=curList.length;
+  const ak=wkey(cat);                 // active progress key (write splits by mode)
+  const d=doneCount(cid,ak),t=curList.length;
   $('#catBar').style.width=(t?Math.round(d/t*100):0)+'%';
-  $('#catCount').textContent=d+' / '+t;
+  const modeTag=cat==='write'?(writeMode==='type'?'⌨️ 电打 · ':'✍️ 手写 · '):'';
+  $('#catCount').textContent=modeTag+d+' / '+t;
   const sb=$('#studyAll');
-  const firstUndone=curList.findIndex(e=>!isDone(cid,cat,e.t));
+  const firstUndone=curList.findIndex(e=>!isDone(cid,ak,e.t));
   sb.innerHTML=(d===0?'开始学习 ›':(d>=t?'再复习一遍 ↻':'继续学习 ›'))+'<div class="en">'+(d>=t?'Review again':'Study')+'</div>';
   sb.onclick=()=>studyItem(firstUndone<0?0:firstUndone);
   const grid=$('#itemGrid');grid.innerHTML='';
   curList.forEach((e,i)=>{
-    const el=document.createElement('div');el.className='chip'+(isDone(cid,cat,e.t)?' done':'');
+    const el=document.createElement('div');el.className='chip'+(isDone(cid,ak,e.t)?' done':'');
     el.innerHTML='<div class="w kai '+(e.t.length===1?'lg':'')+'">'+e.t+'</div>';
     el.onclick=()=>studyItem(i);grid.appendChild(el);
   });
@@ -265,9 +279,10 @@ function studyItem(idx){
   if(curCat==='write') (writeMode==='type'?studyType:studyWrite)(e); else studyRead(e);
 }
 function afterItem(){
-  markDone(curCid,curCat,curList[curIdx].t);
-  // advance to next undone, else back to grid
-  let n=-1;for(let k=curIdx+1;k<curList.length;k++){if(!isDone(curCid,curCat,curList[k].t)){n=k;break;}}
+  const ak=wkey(curCat);
+  markDone(curCid,ak,curList[curIdx].t);
+  // advance to next undone (in the active mode), else back to grid
+  let n=-1;for(let k=curIdx+1;k<curList.length;k++){if(!isDone(curCid,ak,curList[k].t)){n=k;break;}}
   const e=curList[curIdx];
   $('#steps').innerHTML='';$('#stepName').textContent='';
   $('#stage').innerHTML='<div class="center done-screen"><div class="big">✅</div>'
