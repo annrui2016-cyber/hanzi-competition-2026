@@ -92,6 +92,23 @@ var HanziWriter=function(){"use strict";var t;const e="undefined"==typeof window
   @media(hover:hover){.opt:hover{border-color:var(--brand)}}
   .opt.correct{border-color:var(--ok);background:#f0fdf4}
   .opt.wrong{border-color:var(--bad);background:#fef2f2}
+  /* write-mode toggle */
+  .modebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 2px 10px}
+  .modebar .mlab{font-size:13px;color:var(--muted);font-weight:700}
+  .mbtn{font-size:13px;font-weight:800;padding:8px 12px;border-radius:11px;border:2px solid var(--line);background:#fff;color:var(--muted);cursor:pointer}
+  .mbtn.on{border-color:var(--brand);color:var(--brand);background:#e6f6f4}
+  /* 电打 typing */
+  .typing{margin:14px 0 4px;text-align:center}
+  .typing input{font-size:22px;font-weight:800;text-align:center;padding:11px 14px;border:2px solid var(--line);border-radius:12px;
+    width:min(320px,82%);letter-spacing:1px;color:var(--ink);background:#fff}
+  .typing input:focus{outline:none;border-color:var(--brand)}
+  .typing input.okpin{border-color:var(--ok);background:#f0fdf4;color:#15803d}
+  .cands{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px;min-height:6px}
+  .cand{border:2px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;padding:12px 16px;font-size:26px;font-weight:800;position:relative}
+  @media(hover:hover){.cand:hover{border-color:var(--brand)}}
+  .cand .num{position:absolute;top:2px;left:5px;font-size:10px;color:var(--muted);font-weight:700}
+  .cand.correct{border-color:var(--ok);background:#f0fdf4}
+  .cand.wrong{border-color:var(--bad);background:#fef2f2}
   /* 田字格 */
   .tian{margin:12px auto;width:236px;height:236px;border:1.5px solid #d3e0dd;border-radius:14px;background-color:#fff;position:relative;
     background-image:linear-gradient(#edf3f2,#edf3f2),linear-gradient(#edf3f2,#edf3f2);
@@ -127,6 +144,7 @@ var HanziWriter=function(){"use strict";var t;const e="undefined"==typeof window
   <!-- CATEGORY: item grid -->
   <section id="category" class="hide">
     <div class="crumb"><span class="toplink" id="toCycle">‹ 返回 Back</span><span class="crumbmeta" id="catMeta"></span></div>
+    <div id="writeModeBar" class="modebar hide"></div>
     <div class="gridhead">
       <span class="pill" id="catPill"></span>
       <div class="barwrap"><i id="catBar"></i></div>
@@ -159,6 +177,9 @@ function save(){localStorage.setItem(LS,JSON.stringify(prog));}
 const CATS=[['base','基础','Foundation','🌱'],['read','认读','Recognition','👀'],['write','书写','Writing','✍️']];
 const CYNAME={'1':['小学','Primary Cycle 1'],'2':['初中','Middle Cycle 2'],'3':['高中','High Cycle 3']};
 let curCid=null,curCat=null,curList=null,curIdx=0;
+let writeMode=prog.writeMode||'hand';   // 'hand' 手写 | 'type' 电打
+/* toneless pinyin for typing match: strip tones/diacritics, ü/v→u, letters only */
+function tonel(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/v/g,'u').replace(/[^a-z]/g,'');}
 
 const $=s=>document.querySelector(s);
 function show(id){['home','cycle','category','study'].forEach(s=>$('#'+s).classList.add('hide'));$('#'+id).classList.remove('hide');}
@@ -219,6 +240,13 @@ function openCategory(cid,cat){
   const ci=catInfo(cat);
   $('#catMeta').textContent='Cycle '+cid+' · '+CYNAME[cid][0];
   $('#catPill').textContent=ci[1]+' '+ci[2];
+  const wm=$('#writeModeBar');
+  if(cat==='write'){ wm.classList.remove('hide');
+    wm.innerHTML='<span class="mlab">练习方式 Mode</span>'
+      +'<button class="mbtn'+(writeMode==='hand'?' on':'')+'" data-m="hand">✍️ 手写 Handwrite</button>'
+      +'<button class="mbtn'+(writeMode==='type'?' on':'')+'" data-m="type">⌨️ 电打 Type</button>';
+    wm.querySelectorAll('.mbtn').forEach(b=>b.onclick=()=>{writeMode=b.dataset.m;prog.writeMode=writeMode;save();openCategory(cid,cat);});
+  } else wm.classList.add('hide');
   const d=doneCount(cid,cat),t=curList.length;
   $('#catBar').style.width=(t?Math.round(d/t*100):0)+'%';
   $('#catCount').textContent=d+' / '+t;
@@ -240,7 +268,7 @@ function studyItem(idx){
   curIdx=idx;const e=curList[idx];show('study');
   $('#toGrid').onclick=backToGrid;
   $('#studyMeta').textContent=catInfo(curCat)[1]+' · '+(idx+1)+'/'+curList.length;
-  if(curCat==='write') studyWrite(e); else studyRead(e);
+  if(curCat==='write') (writeMode==='type'?studyType:studyWrite)(e); else studyRead(e);
 }
 function afterItem(){
   markDone(curCid,curCat,curList[curIdx].t);
@@ -287,6 +315,52 @@ function listenPick(e){
     if(o.t===e.t)el.dataset.ok=1;
     el.onclick=()=>{ if(box.dataset.locked)return;
       if(o.t===e.t){el.classList.add('correct');box.dataset.locked=1;playGood();speak(e.t);setTimeout(afterItem,700);}
+      else{el.classList.add('wrong');el.style.pointerEvents='none';playBad();}
+    };box.appendChild(el);});
+}
+
+/* ---------- 电打 TYPE flow: present -> type pinyin -> pick candidate ---------- */
+function studyType(e){
+  renderSteps(['呈现','电打'],0);
+  const isWord=e.t.length>1;
+  $('#stage').innerHTML='<div class="center">'
+    +'<div class="term kai '+(isWord?'word':'')+' spk" id="term">'+e.t+' 🔊</div>'
+    +'<div class="py spk" id="py">'+e.py+'</div><div class="endef">'+e.en+'</div>'
+    +(e.ar?'<div class="ardef">'+e.ar+'</div>':'')+'</div>'
+    +'<div class="btnrow"><button class="act" id="go">电打练习 ›<div class="en">Type it</div></button></div>'
+    +'<div class="tip">记住拼音，等会儿用键盘打出来 · you’ll type this in pinyin</div>';
+  speak(e.t);$('#term').onclick=()=>speak(e.t);$('#py').onclick=()=>speak(e.t);
+  $('#go').onclick=()=>typeStep(e);
+}
+function typeStep(e){
+  renderSteps(['呈现','电打'],1);
+  $('#stage').innerHTML='<div class="center"><div class="bigspk" id="spk">🔊</div>'
+    +'<div class="endef">'+e.en+'</div>'
+    +'<div class="py" style="font-size:19px">'+e.py+'</div>'
+    +'<div class="tip">用拼音打出来（不用声调）· type the pinyin, no tones needed</div>'
+    +'<div class="typing"><input id="pin" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="输入拼音…"></div>'
+    +'<div id="hint" class="tip"></div><div class="cands" id="cands"></div></div>';
+  const target=tonel(e.py);
+  const spk=()=>speak(e.t);$('#spk').onclick=spk;setTimeout(spk,250);
+  const inp=$('#pin');setTimeout(()=>inp.focus(),120);
+  let revealed=false;
+  function check(){ if(revealed)return false;
+    if(tonel(inp.value)===target){revealed=true;inp.readOnly=true;inp.classList.add('okpin');
+      $('#hint').innerHTML='✅ 拼音正确！选出正确的字 · pick the right character';showCands(e);return true;}
+    return false;}
+  inp.addEventListener('input',()=>{ if(!revealed && tonel(inp.value)===target) check();
+    else if(!revealed) $('#hint').textContent=''; });
+  inp.addEventListener('keydown',ev=>{ if(ev.key==='Enter'&&!revealed){ if(!check()){$('#hint').innerHTML='拼音还不对，再试试 · not quite, try again';playBad();} }});
+}
+function showCands(e){
+  const pool=curList.filter(x=>x.t!==e.t);
+  const opts=shuffle([e].concat(shuffle(pool.slice()).slice(0,3)));
+  const box=$('#cands');box.innerHTML='';box.dataset.locked='';
+  opts.forEach((o,i)=>{const el=document.createElement('div');el.className='cand kai';
+    el.innerHTML='<span class="num">'+(i+1)+'</span>'+o.t;
+    el.onclick=()=>{ if(box.dataset.locked)return;
+      if(o.t===e.t){el.classList.add('correct');box.dataset.locked=1;playGood();speak(e.t);
+        $('#hint').innerHTML='✅ 上屏成功！Committed';setTimeout(afterItem,780);}
       else{el.classList.add('wrong');el.style.pointerEvents='none';playBad();}
     };box.appendChild(el);});
 }
