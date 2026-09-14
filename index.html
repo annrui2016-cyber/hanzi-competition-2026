@@ -189,8 +189,9 @@ function listKey(pk){return pk==='write_type'?'write':pk;}
 function isDone(cid,pk,term){return !!(prog.done[cid]&&prog.done[cid][pk]&&prog.done[cid][pk][term]);}
 function markDone(cid,pk,term){prog.done[cid]=prog.done[cid]||{};prog.done[cid][pk]=prog.done[cid][pk]||{};prog.done[cid][pk][term]=1;save();}
 function doneCount(cid,pk){const items=DATA.cycles[cid][listKey(pk)];return items.filter(e=>isDone(cid,pk,e.t)).length;}
-function cycleTotal(cid){const c=DATA.cycles[cid];return c.base.length+c.read.length+c.write.length*2;}
-function cycleDone(cid){return doneCount(cid,'base')+doneCount(cid,'read')+doneCount(cid,'write')+doneCount(cid,'write_type');}
+function hasType(cid){return cid==='3';}   // 只有 Cycle 3 高中比赛有电打环节
+function cycleTotal(cid){const c=DATA.cycles[cid];return c.base.length+c.read.length+c.write.length*(hasType(cid)?2:1);}
+function cycleDone(cid){return doneCount(cid,'base')+doneCount(cid,'read')+doneCount(cid,'write')+(hasType(cid)?doneCount(cid,'write_type'):0);}
 
 /* ---------- speech + sfx ---------- */
 function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
@@ -228,11 +229,16 @@ function openCycle(cid){
     const t=DATA.cycles[cid][cat].length;
     const el=document.createElement('div');el.className='bigcard';
     let tag,progHtml,miniHtml;
-    if(cat==='write'){
+    if(cat==='write' && hasType(cid)){
       const dh=doneCount(cid,'write'),dt=doneCount(cid,'write_type');
       tag='（听写 · 手写 + 电打）';
       progHtml='<div class="prog"><i style="width:'+(t?Math.round((dh+dt)/(2*t)*100):0)+'%"></i></div>';
       miniHtml='<div class="mini">✍️ '+dh+'/'+t+'<br>⌨️ '+dt+'/'+t+'<div class="arrow">›</div></div>';
+    }else if(cat==='write'){
+      const d=doneCount(cid,'write');
+      tag='（听写 · 手写）';
+      progHtml='<div class="prog"><i style="width:'+(t?Math.round(d/t*100):0)+'%"></i></div>';
+      miniHtml='<div class="mini">'+d+'/'+t+'<div class="arrow">›</div></div>';
     }else{
       const d=doneCount(cid,cat);
       tag='（发音 · 意思 · 练习）';
@@ -253,16 +259,16 @@ function openCategory(cid,cat){
   $('#catMeta').textContent='Cycle '+cid+' · '+CYNAME[cid][0];
   $('#catPill').textContent=ci[1]+' '+ci[2];
   const wm=$('#writeModeBar');
-  if(cat==='write'){ wm.classList.remove('hide');
+  if(cat==='write' && hasType(cid)){ writeMode=prog.writeMode||'hand'; wm.classList.remove('hide');
     wm.innerHTML='<span class="mlab">练习方式 Mode</span>'
       +'<button class="mbtn'+(writeMode==='hand'?' on':'')+'" data-m="hand">✍️ 手写 Handwrite</button>'
       +'<button class="mbtn'+(writeMode==='type'?' on':'')+'" data-m="type">⌨️ 电打 Type</button>';
     wm.querySelectorAll('.mbtn').forEach(b=>b.onclick=()=>{writeMode=b.dataset.m;prog.writeMode=writeMode;save();openCategory(cid,cat);});
-  } else wm.classList.add('hide');
-  const ak=wkey(cat);                 // active progress key (write splits by mode)
+  } else { if(cat==='write') writeMode='hand'; wm.classList.add('hide'); }
+  const ak=wkey(cat);                 // active progress key (write splits by mode, C3 only)
   const d=doneCount(cid,ak),t=curList.length;
   $('#catBar').style.width=(t?Math.round(d/t*100):0)+'%';
-  const modeTag=cat==='write'?(writeMode==='type'?'⌨️ 电打 · ':'✍️ 手写 · '):'';
+  const modeTag=(cat==='write'&&hasType(cid))?(writeMode==='type'?'⌨️ 电打 · ':'✍️ 手写 · '):'';
   $('#catCount').textContent=modeTag+d+' / '+t;
   const sb=$('#studyAll');
   const firstUndone=curList.findIndex(e=>!isDone(cid,ak,e.t));
